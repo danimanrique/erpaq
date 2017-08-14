@@ -161,20 +161,55 @@ body, html {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 3*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#contenedor-s3{
+    margin-top: 10px;
+    background-color: white;
+    padding: 0px;
+}
+#titulo{
+    margin-left: 15%;
+    margin-bottom: -4%;
+    font-size: 45px;
+    font-family: initial;
+    padding-top: 5px;
+}
+.img-s3{
+	width: 100%;
+    padding: 5px;
+}
+#visorZ{
+    padding: 0px;
+    margin-bottom: 1%;
+}
 #visorZ a{
     padding: 3px;
 }
 #visorZ i{
+    font-size:25px;
     cursor: hand;
     cursor: pointer;
     color: #20272A;
-    background-color: white;
+    background-color: #ddd;
     border-radius: 15px;
-    padding: 4px;
-    padding-top: 1px;
-    padding-left: 3px
+    padding: 5px;
+    padding-top: 3px;
+}
+#arrowLeft{
+    float:right;
+}
+#pic{
+    background-color:lightblue;
+    padding:15px 20px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+#figure1{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #visorZ p{
+    padding: 0px;
     font-size:25px;
     text-align:center;
     margin:0px;
@@ -183,7 +218,6 @@ body, html {
     color: white;
     background-color: #0006;
 }
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 4 y 5*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

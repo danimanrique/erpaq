@@ -1,29 +1,48 @@
-
-<div id="visorZ" class="row" style="padding:10px; height:650px;">
-    <a class="col-md-1 col-md-offset-1" (click)="backImg()"
-        [style.margin-top.px]="alturaFlechas">
-        <i class="fa fa-arrow-left" aria-hidden="true" style="font-size:25px; float:right"></i>
-    </a>
-    <div class="col-md-8" style="background-color:lightblue;padding:20px">
-        <figure class="zoom-image"
-            [style.background-image]="'url(' + srcImg + ')'"
-            [style.height.px]="heightVisor"
-            [style.width.%]="25"
-            [style.margin-left.px]="450">
-
-            <figure
-                 [style.background-image]="'url(' + srcImg + ')'"
-                 [style.height.px]="heightVisor">
+<div id="contenedor-s3" class="container-fluid col-md-10 col-md-offset-1">
+    <p id="titulo">TODOS CONTRA LA IMPUNIDAD</p>
+    <img src="/assets/img/s3/banner.png" class="img-responsive img-s3">
+    <p class="col-md-10 col-md-offset-1 text-justify">
+        La ley de “OBEDIENCIA DEBIDA” liberó de responsabilidad
+        a los genocidas que hubieran actuado obedeciendo órdenes de sus
+        superiores. Como se trato de un PLAN CRIMINAL implementado desde las
+        cúpulas de las tres Fuerzas Armadas, todos los ejecutores recibían
+        órdenes transmitidas por cadena de mandos.<br>
+        En 1978 la Corte Suprema de Justicia convalidó la ley de “OBEDIENCIA
+        DEBIDA” la que había sido declarada inconstitucional por la Cámara
+        Federal de B. Blanca.<br>
+        Ese fallo arrojó al archivo a cientos de causas por delitos de lesa
+        humanidad que se estaban tramitando ante Tribunales de todo el país. El
+        98% de los genocidas volvió a circular por las calles, recuperando el
+        status de “ciudadano libre de toda sospecha”, del que gozaban en
+        dictadura, a favor de la clandestinidad.<br>
+        Durante el imperio de las Leyes de IMPUNIDAD fue necesario buscar nuevos
+        caminos procesales para responder al reclamo de JUICIO Y CASTIGO<br>
+        Las ABUELAS impulsaron los Juicios para la restitución de los niñ@s
+        nacid@s en cautiverio.<br>
+        Los ORGANISMOS DE DD.HH pusieron un límite a la impunidad. Los juicios
+        por el Derecho a la Verdad: no habilitaron el castigo penal, pero sí
+        permitieron la recolección de pruebas. Lograron arrancarle la capucha
+        a los genocidas
+    </p>
+    <div id="visorZ" class="col-md-12">
+        <a class="col-md-1" (click)="backImg()"
+            [style.margin-top.px]="alturaFlechas">
+            <i id="arrowLeft" class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <div id="pic" class="col-md-10">
+            <figure id="figure1" class="zoom-image"
+                [style.background-image]="'url(' + srcImg + ')'"
+                [style.height.px]="heightVisor">
+                <figure
+                     [style.background-image]="'url(' + srcImg + ')'"
+                     [style.height.px]="heightVisor">
+                </figure>
             </figure>
-        </figure>
-        <p>{{descripcion}}</p>
+            <p>{{descripcion}}</p>
+        </div>
+        <a class="col-md-1" (click)="nextImg()"
+            [style.margin-top.px]="alturaFlechas">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
     </div>
-    <a class="col-md-1" (click)="nextImg()"
-        [style.margin-top.px]="alturaFlechas">
-        <i class="fa fa-arrow-right" aria-hidden="true" style="font-size:25px;"></i>
-    </a>
 </div>
-
-background-size: 25%;
-background-repeat: no-repeat;
-background-position: center;
