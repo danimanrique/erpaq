@@ -1,0 +1,39 @@
+<!-- Arreglar los links del footer -->
+<div id="div-nav" class="container-fluid">
+    <nav>
+        <!-- <button type="button" (click)="desplegar"><i class="fa fa-bars"></i></button> -->
+        <!-- <a id="pull" class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a> -->
+        <ul class="col-md-10 col-md-offset-1 classse">
+            <li> <a [routerLink]="['/home']" [routerLinkActive]="['activado']">Home</a> </li>
+            <li> <a [routerLink]="['/estadoterrorista']" [routerLinkActive]="['activado']">Estado Terrorista</a> </li>
+            <li> <a [routerLink]="['/historias']" [routerLinkActive]="['activado']">Historias de vida</a> </li>
+            <li> <a [routerLink]="['/impunidad']" [routerLinkActive]="['activado']">Contra la impunidad</a> </li>
+            <li class ="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Juicios<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: #20272a;">
+                  <li><a [routerLink]="['/juicios/nqn']" [routerLinkActive]="['activado']" (click)="cambiar('nqn')">Neuquen</a></li>
+                  <li><a [routerLink]="['/juicios/bahia']" [routerLinkActive]="['activado']"  (click)="cambiar('bahia')">Bahia Blanca</a></li>
+                </ul>
+            </li>
+            <li> <a [routerLink]="['/search']" [routerLinkActive]="['activado']"><i class="fa fa-search" aria-hidden="true"></i></a> </li>
+        </ul>
+        <a id="pull" (click)="desplegar">Secciones<i class="fa fa-bars"></i></a>
+    </nav>
+</div>
+
+<router-outlet></router-outlet>
+
+<div id="div-footer">
+    <footer  class="col-md-10 col-md-offset-1">
+
+        <ul>
+            <li> <a href="http://www.uncoma.edu.ar"> </a> </li>
+            <li> <a href="http://www.spnqn.com.ar"> </a> </li>
+            <li> <a href="#"> </a> </li>
+            <li> <a href="http://www.radiouncocalf.com.ar"> </a> </li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <img src="/assets/img/foot.png" alt="">
+    </footer>
+</div>

@@ -1,0 +1,29 @@
+
+<div id="visorZ" class="row" style="padding:10px; height:650px;">
+    <a class="col-md-1 col-md-offset-1" (click)="backImg()"
+        [style.margin-top.px]="alturaFlechas">
+        <i class="fa fa-arrow-left" aria-hidden="true" style="font-size:25px; float:right"></i>
+    </a>
+    <div class="col-md-8" style="background-color:lightblue;padding:20px">
+        <figure class="zoom-image"
+            [style.background-image]="'url(' + srcImg + ')'"
+            [style.height.px]="heightVisor"
+            [style.width.%]="25"
+            [style.margin-left.px]="450">
+
+            <figure
+                 [style.background-image]="'url(' + srcImg + ')'"
+                 [style.height.px]="heightVisor">
+            </figure>
+        </figure>
+        <p>{{descripcion}}</p>
+    </div>
+    <a class="col-md-1" (click)="nextImg()"
+        [style.margin-top.px]="alturaFlechas">
+        <i class="fa fa-arrow-right" aria-hidden="true" style="font-size:25px;"></i>
+    </a>
+</div>
+
+background-size: 25%;
+background-repeat: no-repeat;
+background-position: center;
