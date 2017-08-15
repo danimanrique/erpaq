@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Afiche } from '../afiche';
-declare var jQuery: any;
+import { Compa } from './compa';
 declare var $: any;
+
 
 @Component({
     selector: 'seccion3',
@@ -14,12 +14,12 @@ export class Seccion3Component {
     public srcImg: String;
     public srcSmall: String;
     public descripcion: String;
-    public arrImg: Array<Afiche>;
+    public arrImg: Array<Compa>;
     public saveChange: any;
     public i: number;
 
     ngOnInit(): void {
-        this.heightVisor = 600;
+        this.heightVisor = 640;
         this.alturaFlechas = this.heightVisor/2;
         $('.zoom-image').zoomImage({
             touch: false
@@ -28,24 +28,23 @@ export class Seccion3Component {
         this.arrImg = [
             {
                 small: 'assets/img/s3/img1.jpg',
-                medium: '',
-                description: '',
                 big: 'assets/img/s3/img1.jpg',
-                name: 'Dedicatoria Cañón'
+                name: 'Justicia y Memoria han sido pisoteadas'
             },
             {
                 small: 'assets/img/s3/img2.jpg',
                 big: 'assets/img/s3/img2.jpg',
-                name: 'No es lo Mismo ver que Mirar',
-                medium: '',
-                description: '',
+                name: 'Semana Santa de 1987'
             },
             {
                 small: '',
-                big: 'assets/img/s3/foot.png',
-                name: 'Nueva Provincia',
-                medium: '',
-                description: '',
+                big: 'assets/img/s3/img3.jpg',
+                name: 'Poder Militar - Poder Genocida'
+            },
+            {
+                small: '',
+                big: 'assets/img/s3/img4.jpg',
+                name: 'Tira y Afloja: 30 años de Impunidad'
             }
         ];
         this.i = 0;
