@@ -143,10 +143,24 @@ body, html {
     margin-right: 7px;
     margin-left: 11px;
 }
-.three-columns {
+.columns {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
+}
+@media only screen and (max-width : 820px) {
+    .columns {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    }
+}
+@media only screen and (max-width : 450px) {
+    .columns {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
 }
 .letraCapital {
    float:left;
@@ -157,7 +171,9 @@ body, html {
    font-family:times;
    margin-right: 5px;
 }
-
+.ngx-gallery-icon {
+     color: #adabab !important;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 3*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
