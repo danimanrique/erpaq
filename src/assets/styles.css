@@ -7,10 +7,10 @@ body, html {
 }
 
 #top-div{
-    background-image: url('./img/home1.png')
+    background-image: url('./img/home/home1.png')
 }
 #bot-div{
-    background-image: url('./img/home2.png')
+    background-image: url('./img/home/home2.png')
 }
 #mid-div{
     background-color: rgba(0, 0, 255, 0);
