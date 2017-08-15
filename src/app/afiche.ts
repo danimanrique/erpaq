@@ -3,7 +3,6 @@ export class Afiche{
     public name: string,
     public big: string,
     public medium: string,
-    public small: string,
-    public description: string
+    public small: string
   ){}
 }

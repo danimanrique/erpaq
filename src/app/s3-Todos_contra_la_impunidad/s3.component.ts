@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Compa } from './compa';
+import { Afiche } from '../afiche';
 declare var $: any;
 
 
@@ -12,10 +12,8 @@ export class Seccion3Component {
     public heightVisor: number;
     public alturaFlechas:number;
     public srcImg: String;
-    public srcSmall: String;
     public descripcion: String;
-    public arrImg: Array<Compa>;
-    public saveChange: any;
+    public arrImg: Array<Afiche>;
     public i: number;
 
     ngOnInit(): void {
@@ -27,29 +25,32 @@ export class Seccion3Component {
         //Inicializar el arreglo de imagenes
         this.arrImg = [
             {
-                small: 'assets/img/s3/img1.jpg',
+                small: '',
+                medium: '',
                 big: 'assets/img/s3/img1.jpg',
                 name: 'Justicia y Memoria han sido pisoteadas'
             },
             {
-                small: 'assets/img/s3/img2.jpg',
+                small: '',
+                medium: '',
                 big: 'assets/img/s3/img2.jpg',
                 name: 'Semana Santa de 1987'
             },
             {
                 small: '',
+                medium: '',
                 big: 'assets/img/s3/img3.jpg',
                 name: 'Poder Militar - Poder Genocida'
             },
             {
                 small: '',
+                medium: '',
                 big: 'assets/img/s3/img4.jpg',
                 name: 'Tira y Afloja: 30 años de Impunidad'
             }
         ];
         this.i = 0;
         this.srcImg = this.arrImg[this.i].big;
-        this.srcSmall = this.arrImg[this.i].small;
         this.descripcion = this.arrImg[this.i].name;
     }
 

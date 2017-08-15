@@ -28,31 +28,27 @@ export class Seccion2Component implements OnInit{
                 thumbnailsColumns: 6,
                 thumbnailsRows: 2,
                 thumbnailMargin: 2,
-                thumbnailsArrowsAutoHide: true,
                 previewCloseOnClick: true,
                 previewKeyboardNavigation: true,
+                imageAnimation: NgxGalleryAnimation.Slide,
                 thumbnailSize:  NgxGalleryImageSize.Contain
             },
             //1349
             {
                 breakpoint: 1349,
                 height: '300px',
-                width: "80%",
                 thumbnailsColumns: 5
             },
             // 1072
             {
                 breakpoint: 1072,
                 height: '300px',
-                width: "80%",
                 thumbnailsColumns: 4
             },
             // 700
             {
                 breakpoint: 700,
-                image: false,
                 height:'100px',
-                width: "80%",
                 thumbnailsColumns: 4,
                 thumbnailsRows: 1
             }

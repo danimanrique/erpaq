@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize} from 'ngx-gallery';
 import { Router, ActivatedRoute, Params} from '@angular/router';
+import { Afiche } from '../afiche';
 
 @Component({
    selector: 'seccion4',
@@ -15,122 +16,122 @@ export class Seccion4Component {
     public srcImg: String;
     public galleryOptions: NgxGalleryOptions[];
     public galleryImages: NgxGalleryImage[];
-    public arr1 = [
+    public arr1: Array<Afiche> = [
         {
             small: 'assets/img/bahia/tp2.jpg',
             medium: 'assets/img/bahia/up2.jpg',
             big: 'assets/img/bahia/p2.jpg',
-            description: 'Dedicatoria Cañón'
+            name: 'Dedicatoria Cañón'
         },
         {
             small: 'assets/img/bahia/tp3.jpg',
             medium: 'assets/img/bahia/up3.jpg',
             big: 'assets/img/bahia/p3.jpg',
-            description: 'No es lo Mismo ver que Mirar'
+            name: 'No es lo Mismo ver que Mirar'
         },
         {
             small: 'assets/img/bahia/tp4.jpg',
             medium: 'assets/img/bahia/up4.jpg',
             big: 'assets/img/bahia/p4.jpg',
-            description: 'Nueva Provincia'
+            name: 'Nueva Provincia'
         },
         {
             small: 'assets/img/bahia/tp5.jpg',
             medium: 'assets/img/bahia/up5.jpg',
             big: 'assets/img/bahia/p5.jpg',
-            description: 'Nueva Provincia y Dictadura'
+            name: 'Nueva Provincia y Dictadura'
         },
         {
             small: 'assets/img/bahia/tp6.jpg',
             medium: 'assets/img/bahia/up6.jpg',
             big: 'assets/img/bahia/p6.jpg',
-            description: 'Nueva Provincia y Dictadura'
+            name: 'Nueva Provincia y Dictadura'
         },
         {
             small: 'assets/img/bahia/tp7.jpg',
             medium: 'assets/img/bahia/up7.jpg',
             big: 'assets/img/bahia/p7.jpg',
-            description: 'Los restos de Bombara'
+            name: 'Los restos de Bombara'
         },
         {
             small: 'assets/img/bahia/tp8.jpg',
             medium: 'assets/img/bahia/up8.jpg',
             big: 'assets/img/bahia/p8.jpg',
-            description: 'Desapariciones como prueba Homicidios'
+            name: 'Desapariciones como prueba Homicidios'
         },
         {
             small: 'assets/img/bahia/tp9.jpg',
             medium: 'assets/img/bahia/up9.jpg',
             big: 'assets/img/bahia/p9jpg',
-            description: 'Dicen los Fiscales'
+            name: 'Dicen los Fiscales'
         }
     ];
-    public arr2 = [
+    public arr2: Array<Afiche> = [
         {
             small: 'assets/img/nqn/tp2.jpg',
             medium: 'assets/img/nqn/up2.jpg',
             big: 'assets/img/nqn/p2.jpg',
-            description: 'De victimas a testigos'
+            name: 'De victimas a testigos'
         },
         {
             small: 'assets/img/nqn/tp3.jpg',
             medium: 'assets/img/nqn/up3.jpg',
             big: 'assets/img/nqn/p3.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp4.jpg',
             medium: 'assets/img/nqn/up4.jpg',
             big: 'assets/img/nqn/p4.jpg',
-            description: 'Balbo Secretario General de Aten'
+            name: 'Balbo Secretario General de Aten'
         },
         {
             small: 'assets/img/nqn/tp7.jpg',
             medium: 'assets/img/nqn/up7.jpg',
             big: 'assets/img/nqn/p7.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp15.jpg',
             medium: 'assets/img/nqn/up15.jpg',
             big: 'assets/img/nqn/p15.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp27.jpg',
             medium: 'assets/img/nqn/up27.jpg',
             big: 'assets/img/nqn/p27.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp28.jpg',
             medium: 'assets/img/nqn/up28.jpg',
             big: 'assets/img/nqn/p28.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp29.jpg',
             medium: 'assets/img/nqn/up29.jpg',
             big: 'assets/img/nqn/p29.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp13.jpg',
             medium: 'assets/img/nqn/up13.jpg',
             big: 'assets/img/nqn/p13.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp14.jpg',
             medium: 'assets/img/nqn/up14.jpg',
             big: 'assets/img/nqn/p14.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
         {
             small: 'assets/img/nqn/tp26.jpg',
             medium: 'assets/img/nqn/up26.jpg',
             big: 'assets/img/nqn/p26.jpg',
-            description: 'Carta de Labrune'
+            name: 'Carta de Labrune'
         },
     ];
 
@@ -147,7 +148,9 @@ export class Seccion4Component {
                 thumbnailsColumns: 6,
                 imageAnimation: NgxGalleryAnimation.Slide,
                 thumbnailsPercent: 15,
-                previewDescription: true
+                previewDescription: true,
+                previewCloseOnClick: true,
+                previewKeyboardNavigation: true
             },
             // max-width 1366
             {

@@ -30,9 +30,26 @@ export class Seccion1Component implements OnInit{
                 thumbnailsMargin: 10,
                 previewCloseOnClick: true,
                 previewKeyboardNavigation: true,
+                previewDescription: true,
+                imageAnimation: NgxGalleryAnimation.Slide,
                 imageSize: NgxGalleryImageSize.Contain
+            },
+            // max-width 1366
+            {
+                breakpoint: 1366,
+                height: '600px',
+                thumbnailsColumns: 6,
+                thumbnailsPercent: 10,
+                thumbnailsMargin:2
+            },
+            // max-width 600
+            {
+                breakpoint:600,
+                image: false,
+                height:'150px',
+                thumbnailsColumns: 4,
+                thumbnailsPercent: 20,
             }
-            //1366 - 600
         ];
 
         this._compaService.getEstado().subscribe(

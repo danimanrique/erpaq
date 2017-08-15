@@ -1,37 +1,3 @@
-#para{
-    float: left;
-    padding: 15px;
-    background: #174368;
-    background-color: rgba(23, 67, 104, 0.9);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 835px;
-    overflow-y:auto;
-}
-
-#para span{
-    font: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-    color: white;
-}
-
-h1 {
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
-}
-
-.centrado{
-    padding: 1px;
-    margin: 10px;
-    text-align: center;
-}
-.clarito{
-    background-color: lightblue;
-}
-
-/*todas las reglas anteriores son basura. Se pueden borrar mas adelante*/
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA EL HOME*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -172,13 +138,13 @@ body, html {
    margin-right: 5px;
 }
 .ngx-gallery-icon {
-     color: #adabab !important;
+     color: #696464 !important;
+     font-size: 25px;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 3*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#contenedor-s3{
-    margin-top: 10px;
+.contenedor{
     background-color: white;
     padding: 0px;
 }
@@ -237,11 +203,6 @@ body, html {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 4 y 5*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#contenedor{
-    margin-top: 8px;
-    background-color: white;
-    padding: 0px;
-}
 #t1{
     font-size: 45px;
     font-family: initial;
