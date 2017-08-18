@@ -39,7 +39,7 @@ export class Seccion1Component implements OnInit{
                 breakpoint: 1366,
                 height: '600px',
                 thumbnailsColumns: 6,
-                thumbnailsPercent: 10,
+                thumbnailsPercent: 20,
                 thumbnailsMargin:2
             },
             // max-width 600

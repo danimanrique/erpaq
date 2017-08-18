@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize} from 'ngx-gallery';
 import { Router, ActivatedRoute, Params} from '@angular/router';
 import { Afiche } from '../afiche';
@@ -8,7 +8,7 @@ import { Afiche } from '../afiche';
    templateUrl: 's4.template.html',
 })
 
-export class Seccion4Component {
+export class Seccion4Component implements DoCheck{
     public parametro: String;
     public titulo: String;
     public txtNqn: String;
@@ -135,7 +135,7 @@ export class Seccion4Component {
         },
     ];
 
-    ngOnInit(): void {
+    ngDoCheck(): void {
         this._route.params.forEach((params:Params)=>{
             this.parametro = params['juicio'];
         });
