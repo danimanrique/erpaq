@@ -18,119 +18,119 @@ export class Seccion4Component implements DoCheck{
     public galleryImages: NgxGalleryImage[];
     public arr1: Array<Afiche> = [
         {
-            small: 'assets/img/bahia/tp2.jpg',
-            medium: 'assets/img/bahia/up2.jpg',
-            big: 'assets/img/bahia/p2.jpg',
+            small: 'assets/img/s4/tp2.jpg',
+            medium: 'assets/img/s4/up2.jpg',
+            big: 'assets/img/s4/p2.jpg',
             name: 'Dedicatoria Cañón'
         },
         {
-            small: 'assets/img/bahia/tp3.jpg',
-            medium: 'assets/img/bahia/up3.jpg',
-            big: 'assets/img/bahia/p3.jpg',
+            small: 'assets/img/s4/tp3.jpg',
+            medium: 'assets/img/s4/up3.jpg',
+            big: 'assets/img/s4/p3.jpg',
             name: 'No es lo Mismo ver que Mirar'
         },
         {
-            small: 'assets/img/bahia/tp4.jpg',
-            medium: 'assets/img/bahia/up4.jpg',
-            big: 'assets/img/bahia/p4.jpg',
+            small: 'assets/img/s4/tp4.jpg',
+            medium: 'assets/img/s4/up4.jpg',
+            big: 'assets/img/s4/p4.jpg',
             name: 'Nueva Provincia'
         },
         {
-            small: 'assets/img/bahia/tp5.jpg',
-            medium: 'assets/img/bahia/up5.jpg',
-            big: 'assets/img/bahia/p5.jpg',
+            small: 'assets/img/s4/tp5.jpg',
+            medium: 'assets/img/s4/up5.jpg',
+            big: 'assets/img/s4/p5.jpg',
             name: 'Nueva Provincia y Dictadura'
         },
         {
-            small: 'assets/img/bahia/tp6.jpg',
-            medium: 'assets/img/bahia/up6.jpg',
-            big: 'assets/img/bahia/p6.jpg',
+            small: 'assets/img/s4/tp6.jpg',
+            medium: 'assets/img/s4/up6.jpg',
+            big: 'assets/img/s4/p6.jpg',
             name: 'Nueva Provincia y Dictadura'
         },
         {
-            small: 'assets/img/bahia/tp7.jpg',
-            medium: 'assets/img/bahia/up7.jpg',
-            big: 'assets/img/bahia/p7.jpg',
+            small: 'assets/img/s4/tp7.jpg',
+            medium: 'assets/img/s4/up7.jpg',
+            big: 'assets/img/s4/p7.jpg',
             name: 'Los restos de Bombara'
         },
         {
-            small: 'assets/img/bahia/tp8.jpg',
-            medium: 'assets/img/bahia/up8.jpg',
-            big: 'assets/img/bahia/p8.jpg',
+            small: 'assets/img/s4/tp8.jpg',
+            medium: 'assets/img/s4/up8.jpg',
+            big: 'assets/img/s4/p8.jpg',
             name: 'Desapariciones como prueba Homicidios'
         },
         {
-            small: 'assets/img/bahia/tp9.jpg',
-            medium: 'assets/img/bahia/up9.jpg',
-            big: 'assets/img/bahia/p9jpg',
+            small: 'assets/img/s4/tp9.jpg',
+            medium: 'assets/img/s4/up9.jpg',
+            big: 'assets/img/s4/p9jpg',
             name: 'Dicen los Fiscales'
         }
     ];
     public arr2: Array<Afiche> = [
         {
-            small: 'assets/img/nqn/tp2.jpg',
-            medium: 'assets/img/nqn/up2.jpg',
-            big: 'assets/img/nqn/p2.jpg',
+            small: 'assets/img/s5/tp2.jpg',
+            medium: 'assets/img/s5/up2.jpg',
+            big: 'assets/img/s5/p2.jpg',
             name: 'De victimas a testigos'
         },
         {
-            small: 'assets/img/nqn/tp3.jpg',
-            medium: 'assets/img/nqn/up3.jpg',
-            big: 'assets/img/nqn/p3.jpg',
+            small: 'assets/img/s5/tp3.jpg',
+            medium: 'assets/img/s5/up3.jpg',
+            big: 'assets/img/s5/p3.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp4.jpg',
-            medium: 'assets/img/nqn/up4.jpg',
-            big: 'assets/img/nqn/p4.jpg',
+            small: 'assets/img/s5/tp4.jpg',
+            medium: 'assets/img/s5/up4.jpg',
+            big: 'assets/img/s5/p4.jpg',
             name: 'Balbo Secretario General de Aten'
         },
         {
-            small: 'assets/img/nqn/tp7.jpg',
-            medium: 'assets/img/nqn/up7.jpg',
-            big: 'assets/img/nqn/p7.jpg',
+            small: 'assets/img/s5/tp7.jpg',
+            medium: 'assets/img/s5/up7.jpg',
+            big: 'assets/img/s5/p7.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp15.jpg',
-            medium: 'assets/img/nqn/up15.jpg',
-            big: 'assets/img/nqn/p15.jpg',
+            small: 'assets/img/s5/tp15.jpg',
+            medium: 'assets/img/s5/up15.jpg',
+            big: 'assets/img/s5/p15.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp27.jpg',
-            medium: 'assets/img/nqn/up27.jpg',
-            big: 'assets/img/nqn/p27.jpg',
+            small: 'assets/img/s5/tp27.jpg',
+            medium: 'assets/img/s5/up27.jpg',
+            big: 'assets/img/s5/p27.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp28.jpg',
-            medium: 'assets/img/nqn/up28.jpg',
-            big: 'assets/img/nqn/p28.jpg',
+            small: 'assets/img/s5/tp28.jpg',
+            medium: 'assets/img/s5/up28.jpg',
+            big: 'assets/img/s5/p28.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp29.jpg',
-            medium: 'assets/img/nqn/up29.jpg',
-            big: 'assets/img/nqn/p29.jpg',
+            small: 'assets/img/s5/tp29.jpg',
+            medium: 'assets/img/s5/up29.jpg',
+            big: 'assets/img/s5/p29.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp13.jpg',
-            medium: 'assets/img/nqn/up13.jpg',
-            big: 'assets/img/nqn/p13.jpg',
+            small: 'assets/img/s5/tp13.jpg',
+            medium: 'assets/img/s5/up13.jpg',
+            big: 'assets/img/s5/p13.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp14.jpg',
-            medium: 'assets/img/nqn/up14.jpg',
-            big: 'assets/img/nqn/p14.jpg',
+            small: 'assets/img/s5/tp14.jpg',
+            medium: 'assets/img/s5/up14.jpg',
+            big: 'assets/img/s5/p14.jpg',
             name: 'Carta de Labrune'
         },
         {
-            small: 'assets/img/nqn/tp26.jpg',
-            medium: 'assets/img/nqn/up26.jpg',
-            big: 'assets/img/nqn/p26.jpg',
+            small: 'assets/img/s5/tp26.jpg',
+            medium: 'assets/img/s5/up26.jpg',
+            big: 'assets/img/s5/p26.jpg',
             name: 'Carta de Labrune'
         },
     ];
@@ -176,14 +176,14 @@ export class Seccion4Component implements DoCheck{
         if(this.parametro=='nqn'){
             this.galleryImages = this.arr2;
             this.titulo = 'LOS JUICIOS ANTE EL TRIBUNAL ORAL DE NEUQUEN';
-            this.srcImg = 'assets/img/nqn/bg1.png';
+            this.srcImg = 'assets/img/s5/bg1.png';
             this.txtNqn= 'block';
             this.txtBha= 'none';
         }
         else{
             this.galleryImages = this.arr1;
             this.titulo = 'LOS JUICIOS ANTE EL TRIBUNAL ORAL DE BAHIA BLANCA';
-            this.srcImg = 'assets/img/bahia/bg1.png';
+            this.srcImg = 'assets/img/s4/bg1.png';
             this.txtBha = 'block';
             this.txtNqn = 'none';
         }
