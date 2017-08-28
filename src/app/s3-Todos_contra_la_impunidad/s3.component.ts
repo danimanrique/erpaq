@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Afiche } from '../afiche';
 declare var $: any;
 
-
 @Component({
     selector: 'seccion3',
     templateUrl: 's3.template.html',
