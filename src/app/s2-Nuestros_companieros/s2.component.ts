@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize } from 'ngx-gallery';
 import { Afiche } from '../afiche';
-import { AppService } from '../app.service'
+import { AppService } from '../app.service';
 
 @Component({
    selector: 'seccion2',
@@ -58,9 +58,9 @@ export class Seccion2Component implements OnInit{
             result =>{
                 this.galleryImages = result.afiches;
 
-                console.log(result.afiches);
             },
             error =>{
+                this.galleryImages = [];
                 console.log(<any>error);
             }
         );

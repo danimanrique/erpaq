@@ -20,135 +20,24 @@ export class Seccion1Component implements OnInit{
     public i: number;
 
     constructor(
-            private _compaService: AppService
+            private _appService: AppService
     ){}
 
     ngOnInit(): void{
-        this._compaService.getEstado().subscribe(
+        this._appService.getEstado().subscribe(
             result =>{
                 this.arrImg = result.afiches;
-
-                console.log(result.afiches);
             },
             error =>{
+                this.arrImg = [];
                 console.log(<any>error);
             }
         );
-        this.heightVisor = 640;
+        this.heightVisor = 600;
         this.alturaFlechas = this.heightVisor/2;
         $('.zoom-image').zoomImage({
             touch: false
         });
-        this.arrImg = [
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/02.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/03.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/04a.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/04b.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/05.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/06.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/07.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/08a.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/08b.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/09.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/10.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/11.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/12.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/13.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/14.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/15.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/16.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
-                big: 'assets/img/s1/17.jpg',
-                name:''
-            }
-        ];
         this.i = 0;
         this.srcImg = this.arrImg[this.i].big;
         this.descripcion = this.arrImg[this.i].name;
