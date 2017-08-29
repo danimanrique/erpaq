@@ -46,12 +46,14 @@ body, html {
 #s1-back{
 	padding: 0px;
     background-color: black;
-    text-align: center;
 }
 #s1-back1{
     display: inline-block;
 }
 #s1-back-text{
+    background-color: black;
+}
+#s1-back-text p{
     padding: 5px;
     font-size: 18px;
     color: white;
@@ -59,10 +61,54 @@ body, html {
     font-style: italic;
     margin-bottom: 20px;
 }
-#s1-galeria{
-    margin-top: 10px;
-    margin-bottom: 40px
+#s1-text{
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 14px;
 }
+#visorZs1{
+    margin-bottom: 20px;
+    background-color: black;
+}
+#visorZs1 a{
+    padding: 3px;
+}
+#visorZs1 i{
+    font-size:25px;
+    cursor: hand;
+    cursor: pointer;
+    color: #20272A;
+    background-color: #ddd;
+    border-radius: 15px;
+    padding: 5px;
+    padding-top: 3px;
+}
+#pics1{
+    background-color:black;
+    padding:15px 20px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+#figure1s1{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#arrowLefts1{
+    float:right;
+}
+/*
+#visorZs1 p{
+    padding: 0px;
+    font-size:25px;
+    text-align:center;
+    margin:0px;
+    margin-top: -35px;
+    position: relative;
+    color: white;
+    background-color: #0006;
+}*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA S2 - NUESTROS COMPAÑEROS*/

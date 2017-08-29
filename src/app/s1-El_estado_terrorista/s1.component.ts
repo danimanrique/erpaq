@@ -43,12 +43,6 @@ export class Seccion1Component implements OnInit{
             {
                 small: '',
                 medium: '',
-                big: 'assets/img/s1/01.jpg',
-                name:''
-            },
-            {
-                small: '',
-                medium: '',
                 big: 'assets/img/s1/02.jpg',
                 name:''
             },
