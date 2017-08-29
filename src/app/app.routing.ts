@@ -14,6 +14,7 @@ import { ErrorComponent } from './error/error.component';
 
 const appRoutes: Routes = [
    {path: '',component: HomeComponent},
+   {path: 'home',component: HomeComponent},
    {path: 'estadoterrorista',component: Seccion1Component},
    {path: 'historias',component: Seccion2Component},
    {path: 'impunidad',component: Seccion3Component},

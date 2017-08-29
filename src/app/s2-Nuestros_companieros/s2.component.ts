@@ -15,7 +15,7 @@ export class Seccion2Component implements OnInit{
     public galleryImages: NgxGalleryImage[];
 
     constructor(
-            private _compaService: AppService
+            private _appService: AppService
     ){}
 
     ngOnInit(): void{
@@ -54,7 +54,7 @@ export class Seccion2Component implements OnInit{
             }
         ];
 
-        this._compaService.getCompas().subscribe(
+        this._appService.getCompas().subscribe(
             result =>{
                 this.galleryImages = result.afiches;
 
