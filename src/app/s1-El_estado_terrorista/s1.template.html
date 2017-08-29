@@ -2,11 +2,33 @@
    <div id="s1-back1">
        <img src="assets/img/s1/backs1.jpg" class="img-responsive img-s2">
    </div>
-   <div id="s1-galeria">
+   <!-- <div id="s1-galeria">
        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+   </div> -->
+   <div id="visorZ" class="col-md-12">
+       <a class="col-md-1" (click)="backImg()"
+           [style.margin-top.px]="alturaFlechas">
+           <i id="arrowLeft" class="fa fa-arrow-left" aria-hidden="true"></i>
+       </a>
+       <div id="pic" class="col-md-10">
+           <figure id="figure1" class="zoom-image"
+               [style.background-image]="'url(' + srcImg + ')'"
+               [style.height.px]="heightVisor">
+               <figure
+                    [style.background-image]="'url(' + srcImg + ')'"
+                    [style.height.px]="heightVisor">
+               </figure>
+           </figure>
+           <!-- <p>{{descripcion}}</p> -->
+       </div>
+       <a class="col-md-1" (click)="nextImg()"
+           [style.margin-top.px]="alturaFlechas">
+           <i class="fa fa-arrow-right" aria-hidden="true"></i>
+       </a>
    </div>
    <p id="s1-back-text" class="text-center">
-       "Es la hora del recuento y de la marcha unida y hemos de andar juntos porque una revolución es necesaria todavía" <br>
+       "Es la hora del recuento y de la marcha unida y hemos de andar juntos
+        porque una revolución es necesaria todavía" <br>
        <strong>José Martí</strong>
    </p>
 </div>
