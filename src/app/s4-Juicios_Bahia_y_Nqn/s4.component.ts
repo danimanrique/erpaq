@@ -1,4 +1,4 @@
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize} from 'ngx-gallery';
 import { Router, ActivatedRoute, Params} from '@angular/router';
 import { Afiche } from '../afiche';
@@ -12,7 +12,7 @@ import { AppService } from '../app.service';
 
 })
 
-export class Seccion4Component implements DoCheck, OnInit{
+export class Seccion4Component implements DoCheck{
     public parametro: String;
     public titulo: String;
     public txtNqn: String;
