@@ -261,17 +261,61 @@ body, html {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SEARCH*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#back-search{
-    background-color: lightblue;
+#formulario{
+    padding: 15px;
+    align-content: center;
+    background-color: white;
+    height: 100%;
 }
-#back-search h1{
-    text-align: center;
-}
-#galeria-ul{
+#formulario li{
     list-style: none;
+    display: inline-block;
 }
-#galeria-ul li{
+#formulario button{
+    background-color: #cbcbcb;
+    height: 45px;
+    width: 100px;
+    border: 2px solid;
+    border-top-color: #b2b2b2;
+    border-left-color: #b2b2b2;
+    border-radius: 7px;
+}
+.presionado, #formulario button:active{
+    border: 3px solid !important;
+    background-color: #dad7d7 !important;
+    border-top-color: black !important;
+    border-left-color: black !important;
+    border-bottom-color: #b2b2b2 !important;
+    border-right-color: #b2b2b2 !important;
+}
+#formulario p{
+    font-size: 20px;
+}
+#f1{
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#f2{
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+#f2 p{
     float: left;
+    margin: 0px;
+    margin-top: 2px;
+}
+#f2 button{
+    margin-left: 1%;
+    height: 33px;
+    border-radius: 5px;
+}
+#formulario input{
+    float: left;
+    width: 250px;
+    margin-left: 5px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
