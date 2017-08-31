@@ -30,15 +30,15 @@ export class Seccion3Component implements OnInit{
         this._appService.getImpunidad().subscribe(
             result =>{
                 this.arrImg = result.afiches;
+                this.i = 0;
+                this.srcImg = this.arrImg[this.i].big;
+                this.descripcion = this.arrImg[this.i].name;
             },
             error =>{
                 this.arrImg = [];
                 console.log(<any>error);
             }
         );
-        this.i = 0;
-        this.srcImg = this.arrImg[this.i].big;
-        this.descripcion = this.arrImg[this.i].name;
     }
 
     public backImg() {
