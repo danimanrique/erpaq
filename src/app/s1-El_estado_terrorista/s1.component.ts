@@ -27,20 +27,21 @@ export class Seccion1Component implements OnInit{
         this._appService.getEstado().subscribe(
             result =>{
                 this.arrImg = result.afiches;
+                this.heightVisor = 600;
+                this.alturaFlechas = this.heightVisor/2;
+                $('.zoom-image').zoomImage({
+                    touch: false
+                });
+                this.i = 0;
+                this.srcImg = this.arrImg[this.i].big;
+                this.descripcion = this.arrImg[this.i].name;
             },
             error =>{
                 this.arrImg = [];
                 console.log(<any>error);
             }
         );
-        this.heightVisor = 600;
-        this.alturaFlechas = this.heightVisor/2;
-        $('.zoom-image').zoomImage({
-            touch: false
-        });
-        this.i = 0;
-        this.srcImg = this.arrImg[this.i].big;
-        this.descripcion = this.arrImg[this.i].name;
+
     }
 
     public backImg() {
