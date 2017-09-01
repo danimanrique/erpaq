@@ -1,4 +1,4 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize} from 'ngx-gallery';
 import { Router, ActivatedRoute, Params} from '@angular/router';
 import { Afiche } from '../afiche';
@@ -12,7 +12,7 @@ import { AppService } from '../app.service';
 
 })
 
-export class Seccion4Component implements DoCheck{
+export class Seccion4Component implements OnChanges, OnInit{
     public parametro: String;
     public titulo: String;
     public txtNqn: String;
@@ -27,7 +27,12 @@ export class Seccion4Component implements DoCheck{
         private _appService:AppService,
         private _route:ActivatedRoute,
         private _router:Router
-    ){
+    ){}
+
+    ngOnInit():void{
+        this._route.params.forEach((params:Params)=>{
+            this.parametro = params['juicio'];
+        });
         this._appService.getNeuquen().subscribe(
             result =>{
                 this.arrN = result.afiches;
@@ -82,14 +87,7 @@ export class Seccion4Component implements DoCheck{
         ];
     }
 
-    ngDoCheck(): void {
-        this._route.params.forEach((params:Params)=>{
-            this.parametro = params['juicio'];
-        });
-        this.cambiarParametros();
-    }
-
-    private cambiarParametros(){
+    ngOnChanges(): void {
         if(this.parametro=='nqn'){
             this.galleryImages = this.arrN;
             this.titulo = 'LOS JUICIOS ANTE EL TRIBUNAL ORAL DE NEUQUEN';
@@ -105,7 +103,6 @@ export class Seccion4Component implements DoCheck{
             this.txtNqn = 'none';
         }
     }
-
 
     cambiar(valor:String){
         this.parametro = valor;
