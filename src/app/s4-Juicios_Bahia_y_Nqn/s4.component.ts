@@ -20,19 +20,32 @@ export class Seccion4Component implements DoCheck{
     public srcImg: String;
     public galleryOptions: NgxGalleryOptions[];
     public galleryImages: NgxGalleryImage[];
-    public arr1: Array<Afiche> = [];
-    public arr2: Array<Afiche> = [];
+    public arrB: Array<Afiche> = [];
+    public arrN: Array<Afiche> = [];
 
     constructor(
         private _appService:AppService,
         private _route:ActivatedRoute,
         private _router:Router
-    ){}
-
-    ngDoCheck(): void {
-        this._route.params.forEach((params:Params)=>{
-            this.parametro = params['juicio'];
-        });
+    ){
+        this._appService.getNeuquen().subscribe(
+            result =>{
+                this.arrN = result.afiches;
+            },
+            error =>{
+                this.arrN = [];
+                console.log(<any>error);
+            }
+        );
+        this._appService.getBahia().subscribe(
+            result =>{
+                this.arrB = result.afiches;
+            },
+            error =>{
+                this.arrB = [];
+                console.log(<any>error);
+            }
+        );
         this.galleryOptions = [
             {
                 width: '100%',
@@ -67,37 +80,32 @@ export class Seccion4Component implements DoCheck{
                 previewDescription: true,
             }
         ];
+    }
+
+    ngDoCheck(): void {
+        this._route.params.forEach((params:Params)=>{
+            this.parametro = params['juicio'];
+        });
+        this.cambiarParametros();
+    }
+
+    private cambiarParametros(){
         if(this.parametro=='nqn'){
-            this._appService.getNeuquen().subscribe(
-                result =>{
-                    this.galleryImages = result.afiches;
-                },
-                error =>{
-                    this.galleryImages = [];
-                    console.log(<any>error);
-                }
-            );
+            this.galleryImages = this.arrN;
             this.titulo = 'LOS JUICIOS ANTE EL TRIBUNAL ORAL DE NEUQUEN';
             this.srcImg = 'assets/img/s5/bg1.png';
             this.txtNqn= 'block';
             this.txtBha= 'none';
         }
         else{
-            this._appService.getBahia().subscribe(
-                result =>{
-                    this.galleryImages = result.afiches;
-                },
-                error =>{
-                    this.galleryImages = [];
-                    console.log(<any>error);
-                }
-            );
+            this.galleryImages = this.arrB;
             this.titulo = 'LOS JUICIOS ANTE EL TRIBUNAL ORAL DE BAHIA BLANCA';
             this.srcImg = 'assets/img/s4/bg1.png';
             this.txtBha = 'block';
             this.txtNqn = 'none';
         }
     }
+
 
     cambiar(valor:String){
         this.parametro = valor;
