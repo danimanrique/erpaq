@@ -19,8 +19,8 @@ const appRoutes: Routes = [
    {path: 'estadoterrorista',component: Seccion1Component},
    {path: 'historias',component: Seccion2Component},
    {path: 'impunidad',component: Seccion3Component},
-   {path: 'juiciosbahia',component: Seccion4Component},
-   {path: 'juiciosnqn',component: Seccion5Component},
+   {path: 'juiciobahia',component: Seccion4Component},
+   {path: 'juicionqn',component: Seccion5Component},
    {path: 'search',component: SearchComponent},
    {path: '**',component: ErrorComponent}
    //En realidad la ultima regla (defalut) deberia llamar a una pagina de error404

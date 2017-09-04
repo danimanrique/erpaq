@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 //Componentes del proyecto
 import { AppComponent }  from './app.component';
@@ -30,6 +31,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
       ErrorComponent
    ],
    imports: [
+      FormsModule,
       BrowserModule,
       routing,
       NgxGalleryModule,

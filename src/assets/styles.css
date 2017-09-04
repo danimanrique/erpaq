@@ -21,6 +21,9 @@ body, html {
     width:100%;
     margin-top:-9%;
 }
+#litle-div{
+    display: none;
+}
 .parallax {
     /* Full height */
     height: 100%;
@@ -36,6 +39,14 @@ body, html {
     }
     #mid-div img{
         margin-top:-9.7%;
+    }
+}
+@media only screen and (max-width : 361px) {
+    #mid-div, #top-div, #bot-div{
+        display: none;
+    }
+    #litle{
+        display: block;
     }
 }
 
@@ -267,22 +278,22 @@ body, html {
     background-color: white;
     height: 100%;
 }
-#formulario li{
+#f1 li{
     list-style: none;
     display: inline-block;
 }
 #formulario button{
-    background-color: #cbcbcb;
+    background-color: #6bb3db;
     height: 45px;
     width: 100px;
     border: 2px solid;
-    border-top-color: #b2b2b2;
-    border-left-color: #b2b2b2;
+    border-top-color: #387395;
+    border-left-color: #387395;
     border-radius: 7px;
 }
 .presionado, #formulario button:active{
     border: 3px solid !important;
-    background-color: #dad7d7 !important;
+    background-color: #4e97de !important;
     border-top-color: black !important;
     border-left-color: black !important;
     border-bottom-color: #b2b2b2 !important;
@@ -291,16 +302,11 @@ body, html {
 #formulario p{
     font-size: 20px;
 }
-#f1{
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#f2{
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
+#formulario div{
+    width: 75%;
+    background-color: #ced3d5;
+    padding: 2%;
+    border-radius: 10px;
 }
 #f2 p{
     float: left;
@@ -317,7 +323,25 @@ body, html {
     width: 250px;
     margin-left: 5px;
 }
-
+#f2 ul{
+    margin-top: 3%;
+}
+#f2 li{
+    display: inherit;
+}
+#f2 i{
+    font-size: 18px;
+    cursor: hand;
+    cursor: pointer;
+    color: #BD3838;
+    background-color: #171717;
+    border-radius: 15px;
+    padding: 2px 3px 2px 3px;
+}
+#f2 input:invalid{
+    border-color: red;
+    border-radius: 5px;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA ERROR*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
