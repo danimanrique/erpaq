@@ -254,13 +254,24 @@ body, html {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 4 y 5*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#t1{
-    font-size: 45px;
-    font-family: initial;
+/*#t1{
+    font-size: 50px;
+    font-family: 'PT Sans', sans-serif;
+}*/
+#fondo4{
+    background-color: #a9e375;
+}
+#fondo5{
+    background-color: #174368;
+}
+#text5{
+    color: white;
 }
 #gallery{
     border-radius: 5px;
     background-color: #e9e9e9;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
