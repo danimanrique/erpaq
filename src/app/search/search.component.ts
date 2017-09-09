@@ -14,11 +14,19 @@ export class SearchComponent implements OnInit {
     public s4Press:boolean;
     public s5Press:boolean;
     public all:boolean;
+    public keyWords:Array<String>;
+    public claveAGuardar:String;
 
     ngOnInit() {
         this.s1Press = false;
+        this.s2Press = false;
+        this.s3Press = false;
+        this.s4Press = false;
+        this.s5Press = false;
+        this.all = false;
+        this.keyWords = [];
     }
-    
+
     public activarBoton(valor:number): void {
         switch(valor){
             case(1):
@@ -37,11 +45,11 @@ export class SearchComponent implements OnInit {
             this.s5Press = !this.s5Press;
             break;
             case(0):
-            this.s1Press = !this.s1Press;
-            this.s2Press = !this.s2Press;
-            this.s3Press = !this.s3Press;
-            this.s4Press = !this.s4Press;
-            this.s5Press = !this.s5Press;
+            this.s1Press = true;
+            this.s2Press = true;
+            this.s3Press = true;
+            this.s4Press = true;
+            this.s5Press = true;
             break;
             default:
             console.log('Error interno en switch')
@@ -49,4 +57,13 @@ export class SearchComponent implements OnInit {
         }
     }
 
+    removeKeyWord(index:number){
+        this.keyWords.splice(index, 1);
+    }
+    addKeyWord(){
+        if(this.claveAGuardar != null && this.claveAGuardar != ""){
+            this.keyWords.push(this.claveAGuardar);
+            this.claveAGuardar = null;
+        }
+    }
 }

@@ -1,6 +1,5 @@
-<br>
 <div id="formulario" class="col-md-8 col-md-offset-2">
-    <div id="f1">
+    <div id="f1" class="center-block">
         <p>Filtrar por seccion:</p>
         <ul>
             <li><button type="button" name="button" (click)="activarBoton(1)" [ngClass]="{presionado:s1Press}">Seccion 1</button></li>
@@ -12,9 +11,16 @@
         </ul>
     </div>
     <br>
-    <div id="f2">
-        <p>Palabras clave:</p>
-        <input type="form" name="" value="">
-        <button type="button" name="button">Agregar</button>
+    <div id="f2" class="center-block">
+        <p>Palabras clave: </p>
+        <input type="text" [(ngModel)]="claveAGuardar" pattern="[a-zA-Z]+">
+        <button type="button" name="button" (click)="addKeyWord()">Agregar</button>
+        <ul>
+            <li *ngFor="let key of keyWords; let i = index">
+                {{key}} <i class="fa fa-times" aria-hidden="true" (click)="removeKeyWord(i)"></i>
+            </li>
+        </ul>
     </div>
+    <br>
+    <button type="button" name="button" class="center-block">Buscar</button>
 </div>
