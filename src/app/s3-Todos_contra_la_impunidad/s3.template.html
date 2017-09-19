@@ -24,12 +24,12 @@
         permitieron la recolección de pruebas. Lograron arrancarle la capucha
         a los genocidas
     </p>
-    <div id="visorZ" class="col-md-12">
-        <a class="col-md-1" (click)="backImg()"
+    <div id="visorZ" class="col-md-12 col-xs-12">
+        <a class="col-md-1 col-xs-1" (click)="backImg()"
             [style.margin-top.px]="alturaFlechas">
             <i id="arrowLeft" class="fa fa-arrow-left" aria-hidden="true"></i>
         </a>
-        <div id="pic" class="col-md-10">
+        <div id="pic" class="col-md-10 col-xs-10">
             <figure id="figure1" class="zoom-image"
                 [style.background-image]="'url(' + srcImg + ')'"
                 [style.height.px]="heightVisor">
@@ -40,7 +40,7 @@
             </figure>
             <p>{{descripcion}}</p>
         </div>
-        <a class="col-md-1" (click)="nextImg()"
+        <a class="col-md-1 col-xs-1" (click)="nextImg()"
             [style.margin-top.px]="alturaFlechas">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </a>

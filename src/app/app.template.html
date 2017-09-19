@@ -6,13 +6,15 @@
             <li> <a [routerLink]="['/estadoterrorista']" [routerLinkActive]="['activado']">Estado Terrorista</a> </li>
             <li> <a [routerLink]="['/historias']" [routerLinkActive]="['activado']">Historias de vida</a> </li>
             <li> <a [routerLink]="['/impunidad']" [routerLinkActive]="['activado']">Contra la impunidad</a> </li>
-            <li class ="dropdown">
+            <li id="juicios-drop" class ="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Juicios<span class="caret"></span></a>
                 <ul class="dropdown-menu" style="background-color: #20272a;">
                   <li><a [routerLink]="['/juicionqn']" [routerLinkActive]="['activado']">Neuquen</a></li>
                   <li><a [routerLink]="['/juiciobahia']" [routerLinkActive]="['activado']">Bahia Blanca</a></li>
                 </ul>
             </li>
+            <li id="nav-nqn"><a [routerLink]="['/juicionqn']" [routerLinkActive]="['activado']">Juicio Neuquen</a></li>
+            <li id="nav-bb"><a [routerLink]="['/juiciobahia']" [routerLinkActive]="['activado']">Juicio Bahia Blanca</a></li>
             <li> <a [routerLink]="['/search']" [routerLinkActive]="['activado']"><i class="fa fa-search" aria-hidden="true"></i></a> </li>
         </ul>
         <a id="pull" (click)="desplegar()">Secciones<i class="fa fa-bars"></i></a>
