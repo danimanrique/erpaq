@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router'
 declare var jQuery: any;
 declare var $: any;
 
@@ -8,48 +9,45 @@ declare var $: any;
 })
 
 export class SearchComponent implements OnInit {
-    public s1Press:boolean;
-    public s2Press:boolean;
-    public s3Press:boolean;
-    public s4Press:boolean;
-    public s5Press:boolean;
     public all:boolean;
     public keyWords:Array<String>;
+    public sections:Array<boolean>;
     public claveAGuardar:String;
 
+    constructor(
+        private _route: ActivatedRoute,
+        private _router: Router
+    ){}
+
     ngOnInit() {
-        this.s1Press = false;
-        this.s2Press = false;
-        this.s3Press = false;
-        this.s4Press = false;
-        this.s5Press = false;
         this.all = false;
         this.keyWords = [];
+        this.sections = [false,false,false,false,false];
     }
 
     public activarBoton(valor:number): void {
         switch(valor){
             case(1):
-            this.s1Press = !this.s1Press;
+            this.sections[0] = !this.sections[0];
             break;
             case(2):
-            this.s2Press = !this.s2Press;
+            this.sections[1] = !this.sections[1];
             break;
             case(3):
-            this.s3Press = !this.s3Press;
+            this.sections[2] = !this.sections[2];
             break;
             case(4):
-            this.s4Press = !this.s4Press;
+            this.sections[3] = !this.sections[3];
             break;
             case(5):
-            this.s5Press = !this.s5Press;
+            this.sections[4] = !this.sections[4];
             break;
             case(0):
-            this.s1Press = true;
-            this.s2Press = true;
-            this.s3Press = true;
-            this.s4Press = true;
-            this.s5Press = true;
+            this.sections[0] = true;
+            this.sections[1] = true;
+            this.sections[2] = true;
+            this.sections[3] = true;
+            this.sections[4] = true;
             break;
             default:
             console.log('Error interno en switch')
@@ -65,5 +63,11 @@ export class SearchComponent implements OnInit {
             this.keyWords.push(this.claveAGuardar);
             this.claveAGuardar = null;
         }
+    }
+
+    redirigir(){
+        let keys = this.keyWords.toString();
+        let secciones = this.sections.toString();
+        this._router.navigate(['/result', keys, secciones]);
     }
 }

@@ -35,4 +35,10 @@ export class AppService{
   getNeuquen(){
     return this._http.get(this.url+"/neuquen").map(res => res.json());
   }
+  getAfiches(){
+    return this._http.get(this.url+"/afiche").map(res => res.json());
+  }
+  getBusqueda(arreglo){
+    return this._http.get(this.url+"/busqueda/"+arreglo).map(res => res.json());
+  }
 }

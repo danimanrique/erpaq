@@ -13,6 +13,7 @@ import { Seccion3Component } from './s3-Todos_contra_la_impunidad/s3.component';
 import { Seccion4Component } from './s4-Juicios_Bahia/s4.component';
 import { Seccion5Component } from './s5-Juicios_Nqn/s5.component';
 import { SearchComponent } from './search/search.component';
+import { ResultComponent } from './result/result.component';
 import { ErrorComponent } from './error/error.component';
 
 //Componentes tercerizados
@@ -28,6 +29,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
       Seccion4Component,
       Seccion5Component,
       SearchComponent,
+      ResultComponent,
       ErrorComponent
    ],
    imports: [

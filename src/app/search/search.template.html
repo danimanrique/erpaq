@@ -1,12 +1,13 @@
-<div id="formulario" class="col-md-8 col-md-offset-2">
+<div id="formulario" class="col-md-10 col-md-offset-1">
+    <h1 class='text-center'>Búsqueda</h1>
     <div id="f1" class="center-block">
         <p>Filtrar por seccion:</p>
         <ul>
-            <li><button type="button" name="button" (click)="activarBoton(1)" [ngClass]="{presionado:s1Press}">Seccion 1</button></li>
-            <li><button type="button" name="button" (click)="activarBoton(2)" [ngClass]="{presionado:s2Press}">Seccion 2</button></li>
-            <li><button type="button" name="button" (click)="activarBoton(3)" [ngClass]="{presionado:s3Press}">Seccion 3</button></li>
-            <li><button type="button" name="button" (click)="activarBoton(4)" [ngClass]="{presionado:s4Press}">Seccion 4</button></li>
-            <li><button type="button" name="button" (click)="activarBoton(5)" [ngClass]="{presionado:s5Press}">Seccion 5</button></li>
+            <li><button type="button" name="button" (click)="activarBoton(1)" [ngClass]="{presionado:sections[0]}">Estado Terrorista</button></li>
+            <li><button type="button" name="button" (click)="activarBoton(2)" [ngClass]="{presionado:sections[1]}">Nuestros Compañeros</button></li>
+            <li><button type="button" name="button" (click)="activarBoton(3)" [ngClass]="{presionado:sections[2]}">Contra la Impunidad</button></li>
+            <li><button type="button" name="button" (click)="activarBoton(4)" [ngClass]="{presionado:sections[3]}">Juicios Bahía</button></li>
+            <li><button type="button" name="button" (click)="activarBoton(5)" [ngClass]="{presionado:sections[4]}">Juicios Neuquén</button></li>
             <li><button type="button" name="button" (click)="activarBoton(0)">Todas</button></li>
         </ul>
     </div>
@@ -22,5 +23,5 @@
         </ul>
     </div>
     <br>
-    <button type="button" name="button" class="center-block">Buscar</button>
+    <button type="button" name="button" (click)="redirigir()" class="center-block">Buscar</button>
 </div>
