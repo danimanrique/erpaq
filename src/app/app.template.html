@@ -6,13 +6,15 @@
             <li> <a [routerLink]="['/estadoterrorista']" [routerLinkActive]="['activado']">Estado Terrorista</a> </li>
             <li> <a [routerLink]="['/historias']" [routerLinkActive]="['activado']">Historias de vida</a> </li>
             <li> <a [routerLink]="['/impunidad']" [routerLinkActive]="['activado']">Contra la impunidad</a> </li>
-            <li class ="dropdown">
+            <li id="juicios-drop" class ="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Juicios<span class="caret"></span></a>
                 <ul class="dropdown-menu" style="background-color: #20272a;">
                   <li><a [routerLink]="['/juicionqn']" [routerLinkActive]="['activado']">Neuquen</a></li>
                   <li><a [routerLink]="['/juiciobahia']" [routerLinkActive]="['activado']">Bahia Blanca</a></li>
                 </ul>
             </li>
+            <li id="nav-nqn"><a [routerLink]="['/juicionqn']" [routerLinkActive]="['activado']">Juicio Neuquen</a></li>
+            <li id="nav-bb"><a [routerLink]="['/juiciobahia']" [routerLinkActive]="['activado']">Juicio Bahia Blanca</a></li>
             <li> <a [routerLink]="['/search']" [routerLinkActive]="['activado']"><i class="fa fa-search" aria-hidden="true"></i></a> </li>
         </ul>
         <a id="pull" (click)="desplegar()">Secciones<i class="fa fa-bars"></i></a>
@@ -21,17 +23,25 @@
 
 <router-outlet></router-outlet>
 
-<div id="div-footer">
-    <footer  class="col-md-10 col-md-offset-1">
-
-        <ul>
-            <li> <a href="http://www.uncoma.edu.ar"> </a> </li>
-            <li> <a href="http://www.spnqn.com.ar"> </a> </li>
-            <li> <a href="#"> </a> </li>
-            <li> <a href="http://www.radiouncocalf.com.ar"> </a> </li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-        <img src="assets/img/foot.png" alt="">
-    </footer>
-</div>
+<footer  class="col-md-10 col-md-offset-1">
+    <ul>
+        <li>
+            <a href="http://www.uncoma.edu.ar"><img src="/assets/img/f1.png" alt="Logo UNCo" class="img-responsive"></a>
+        </li>
+        <li>
+            <a href="http://www.spnqn.com.ar"><img src="/assets/img/f2.png" alt="Logo SPNQN" class="img-responsive"></a>
+        </li>
+        <li>
+            <a href=""><img src="/assets/img/f3.png" alt="Logo Memoria Colectiva" class="img-responsive"></a>
+        </li>
+        <li>
+            <a href="http://www.radiouncocalf.com.ar"><img src="/assets/img/f4.png" alt="Logo UNC CALF" class="img-responsive"></a>
+        </li>
+        <li>
+            <a href=""><img src="/assets/img/f5.png" alt="Logo Asociasion de reporteros graficos de nqn" class="img-responsive"></a>
+        </li>
+        <li>
+            <a href=""><img src="/assets/img/f6.png" alt="Logo APDH" class="img-responsive"></a>
+        </li>
+    </ul>
+</footer>

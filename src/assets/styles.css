@@ -103,17 +103,22 @@ body, html {
 #arrowLefts1{
     float:right;
 }
-/*
-#visorZs1 p{
-    padding: 0px;
-    font-size:25px;
-    text-align:center;
-    margin:0px;
-    margin-top: -35px;
-    position: relative;
-    color: white;
-    background-color: #0006;
-}*/
+@media only screen and (max-width:720px){
+    #visorZs1{
+        padding: 0px;
+    }
+    #pics1{
+        padiing-left:0px;
+        padding-right: 0px;
+    }
+    #visorZs1 i{
+        font-size: 15px;
+        padding: 1px;
+    }
+    #figIntS1{
+        display: none;
+    }
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA S2 - NUESTROS COMPAÑEROS*/
@@ -251,6 +256,22 @@ body, html {
     color: white;
     background-color: #0006;
 }
+@media only screen and (max-width:720px){
+    #visorZ{
+        padding: 0px;
+    }
+    #pic{
+        padiing-left:0px;
+        padding-right: 0px;
+    }
+    #visorZ i{
+        font-size: 15px;
+        padding: 1px;
+    }
+    #figInt{
+        display: none;
+    }
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA SECCION 4 y 5*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -326,7 +347,7 @@ body, html {
 }
 #formulario input{
     float: left;
-    width: 250px;
+    max-width: 30%;
     margin-left: 5px;
 }
 #f2 ul{
@@ -347,6 +368,9 @@ body, html {
 #f2 input:invalid{
     border-color: red;
     border-radius: 5px;
+}
+#add:disabled{
+    background-color: #577586;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -387,7 +411,6 @@ body, html {
     margin: 25px 0px 0px 0px;
     /*background-color: #eee;*/
 }
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA ERROR*/

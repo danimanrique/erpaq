@@ -16,23 +16,23 @@
             Y, paralelamente, en un plano clandestino, donde el terror, la tortura y la muerte eran la única ley.
        </div>
    </div>
-   <div id="visorZs1" class="col-md-12">
-       <a class="col-md-1" (click)="backImg()"
+   <div id="visorZs1" class="col-md-12 col-xs-12">
+       <a class="col-md-1 col-xs-1" (click)="backImg()"
            [style.margin-top.px]="alturaFlechas">
            <i id="arrowLefts1" class="fa fa-arrow-left" aria-hidden="true"></i>
        </a>
-       <div id="pics1" class="col-md-10">
+       <div id="pics1" class="col-md-10 col-xs-10">
            <figure id="figure1s1" class="zoom-image"
                [style.background-image]="'url(' + srcImg + ')'"
                [style.height.px]="heightVisor">
-               <figure
+               <figure id="figIntS1"
                     [style.background-image]="'url(' + srcImg + ')'"
                     [style.height.px]="heightVisor">
                </figure>
            </figure>
            <!-- <p>{{descripcion}}</p> -->
        </div>
-       <a class="col-md-1" (click)="nextImg()"
+       <a class="col-md-1 col-xs-1" (click)="nextImg()"
            [style.margin-top.px]="alturaFlechas">
            <i class="fa fa-arrow-right" aria-hidden="true"></i>
        </a>
