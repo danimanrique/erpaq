@@ -15,9 +15,9 @@
     <br>
     <div id="f2" class="center-block formdiv">
         <p>Palabras clave: </p>
-        <span>Ingrese una o mas palabras que caractericen el contenido a buscar.
+        <span class="text-justify">Ingrese una o mas palabras que caractericen el contenido a buscar.
              En caso de que sean más de una palabra deben ser ingresadas de una
-             a la vez y además no deben contener números.</span>
+             a la vez. <strong>No deben contener números ni tildes.</strong></span>
         <div class="">
             <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel"
             pattern="[a-zA-Z]+">
@@ -30,6 +30,6 @@
         </ul>
     </div>
     <br>
-    <button type="button" name="button" [disabled]="busquedaInvalida()" (click)="redirigir()" class="center-block">Buscar</button>
+    <button id="boton_buscar" type="button" name="button" [disabled]="busquedaInvalida()" (click)="redirigir()" class="center-block">Buscar</button>
 
 </div>

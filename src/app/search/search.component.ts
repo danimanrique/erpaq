@@ -62,7 +62,7 @@ export class SearchComponent implements OnInit {
     }
     addKeyWord(){
         if(this.claveAGuardar != null && this.claveAGuardar != ""){
-            this.keyWords.push(this.claveAGuardar);
+            this.keyWords.push((this.claveAGuardar).toLowerCase());
             this.claveAGuardar = null;
         }
     }
