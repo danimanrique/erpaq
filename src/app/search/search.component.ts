@@ -73,4 +73,14 @@ export class SearchComponent implements OnInit {
         console.log("probando",keys,secciones);
         this._router.navigate(['/result', keys, secciones],{ skipLocationChange: true});
     }
+
+    busquedaInvalida(){
+        var re: boolean = true;
+        if(this.sections[0] || this.sections[1] || this.sections[2] || this.sections[3] || this.sections[4]){
+            if(this.keyWords.length > 0){
+                re = false;
+            }
+        }
+        return re;
+    }
 }

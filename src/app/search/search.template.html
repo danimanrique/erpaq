@@ -1,7 +1,8 @@
 <div id="formulario" class="col-md-10 col-md-offset-1">
     <h1 class='text-center'>Búsqueda</h1>
-    <div id="f1" class="center-block">
+    <div id="f1" class="center-block formdiv">
         <p>Filtrar por seccion:</p>
+        <span>Seleccione al menos una de las secciones para realizar la busqueda</span>
         <ul>
             <li><button type="button" name="button" (click)="activarBoton(1)" [ngClass]="{presionado:sections[0]}">Estado Terrorista</button></li>
             <li><button type="button" name="button" (click)="activarBoton(2)" [ngClass]="{presionado:sections[1]}">Nuestros Compañeros</button></li>
@@ -12,10 +13,16 @@
         </ul>
     </div>
     <br>
-    <div id="f2" class="center-block formDiv">
+    <div id="f2" class="center-block formdiv">
         <p>Palabras clave: </p>
-        <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel" pattern="[a-zA-Z]+">
-        <button type="button" id="add" [disabled]="!inputState.valid" (click)="addKeyWord()">Agregar</button>
+        <span>Ingrese una o mas palabras que caractericen el contenido a buscar.
+             En caso de que sean más de una palabra deben ser ingresadas de una
+             a la vez y además no deben contener números.</span>
+        <div class="">
+            <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel"
+            pattern="[a-zA-Z]+">
+            <button type="button" id="add" [disabled]="inputState.invalid" (click)="addKeyWord()">Agregar</button>
+        </div>
         <ul>
             <li *ngFor="let key of keyWords; let i = index">
                 {{key}} <i class="fa fa-times" aria-hidden="true" (click)="removeKeyWord(i)"></i>
@@ -23,5 +30,6 @@
         </ul>
     </div>
     <br>
-    <button type="button" name="button" (click)="redirigir()" class="center-block" >Buscar</button>
+    <button type="button" name="button" [disabled]="busquedaInvalida()" (click)="redirigir()" class="center-block">Buscar</button>
+
 </div>
