@@ -53,6 +53,8 @@ export class SearchComponent implements OnInit {
             console.log('Error interno en switch')
             break;
         }
+
+
     }
 
     removeKeyWord(index:number){
@@ -68,6 +70,7 @@ export class SearchComponent implements OnInit {
     redirigir(){
         let keys = this.keyWords.toString();
         let secciones = this.sections.toString();
-        this._router.navigate(['/result', keys, secciones]);
+        console.log("probando",keys,secciones);
+        this._router.navigate(['/result', keys, secciones],{ skipLocationChange: true});
     }
 }

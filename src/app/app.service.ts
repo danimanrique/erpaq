@@ -38,7 +38,7 @@ export class AppService{
   getAfiches(){
     return this._http.get(this.url+"/afiche").map(res => res.json());
   }
-  getBusqueda(arreglo){
-    return this._http.get(this.url+"/busqueda/"+arreglo).map(res => res.json());
+  getBusqueda(arreglo,secciones){
+    return this._http.get(this.url+"/busqueda/"+arreglo+"/"+secciones).map(res => res.json());
   }
 }

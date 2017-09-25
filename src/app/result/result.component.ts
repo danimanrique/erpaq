@@ -23,22 +23,22 @@ export class ResultComponent implements OnInit {
 
     ngOnInit(): void{
         this._route.params.subscribe(params => {
-            if(params['arreglo']!=null && params['secciones']){
-                this.arreglo = params['keyWords'];
-                this.secciones = params['sections'];
-                console.log("recibí", this.arreglo, this.secciones)
+            if(params['arreglo']!="" && params['secciones']!=""){
+                this.arreglo = (params['keyWords']).split(',');
+                this.secciones = (params['sections']).split(',');
             }
+            // this._appService.getAfiches().subscribe(
+            this._appService.getBusqueda(this.arreglo, this.secciones).subscribe(
+                result =>{
+                    this.lista_resultado = result.afiches;
+                },
+                error =>{
+                    this.lista_resultado = [];
+                    console.log(<any>error);
+                }
+            );
          });
-        // this._appService.getAfiches().subscribe(
-        this._appService.getBusqueda(this.arreglo).subscribe(
-            result =>{
-                this.lista_resultado = result.afiches;
-            },
-            error =>{
-                this.lista_resultado = [];
-                console.log(<any>error);
-            }
-        );
+
     }
 
     redirigir(){

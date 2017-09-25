@@ -8,15 +8,14 @@
             <li><button type="button" name="button" (click)="activarBoton(3)" [ngClass]="{presionado:sections[2]}">Contra la Impunidad</button></li>
             <li><button type="button" name="button" (click)="activarBoton(4)" [ngClass]="{presionado:sections[3]}">Juicios Bahía</button></li>
             <li><button type="button" name="button" (click)="activarBoton(5)" [ngClass]="{presionado:sections[4]}">Juicios Neuquén</button></li>
-            <li><button type="button" name="button" (click)="activarBoton(0)">Todas</button></li>
+            <li><button type="button" name="button" (click)="activarBoton(0)">Seleccionar Todas</button></li>
         </ul>
     </div>
     <br>
     <div id="f2" class="center-block formDiv">
         <p>Palabras clave: </p>
-        <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel"
-        pattern="[a-zA-Z]+">
-        <button type="button" id="add" [disabled]="inputState.invalid" (click)="addKeyWord()">Agregar</button>
+        <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel" pattern="[a-zA-Z]+">
+        <button type="button" id="add" [disabled]="!inputState.valid" (click)="addKeyWord()">Agregar</button>
         <ul>
             <li *ngFor="let key of keyWords; let i = index">
                 {{key}} <i class="fa fa-times" aria-hidden="true" (click)="removeKeyWord(i)"></i>
@@ -24,5 +23,5 @@
         </ul>
     </div>
     <br>
-    <button type="button" name="button" (click)="redirigir()" class="center-block">Buscar</button>
+    <button type="button" name="button" (click)="redirigir()" class="center-block" >Buscar</button>
 </div>
