@@ -20,6 +20,11 @@ a#pull {
 	height: 45px;
 	padding: 0px;
 }
+@media only screen and (max-width:1127px){
+    #div-nav a{
+        font-size: 16px !important;
+    }
+}
 nav{
 	width: 100%;
 	text-align: center;

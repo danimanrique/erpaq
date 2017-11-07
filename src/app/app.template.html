@@ -1,10 +1,10 @@
 <div id="div-nav" class="container-fluid">
     <nav>
         <ul class="col-md-10 col-md-offset-1 classse">
-            <li> <a [routerLink]="['/home']" [routerLinkActive]="['activado']">Home</a> </li>
+            <li> <a [routerLink]="['/home']" [routerLinkActive]="['activado']">Inicio</a> </li>
             <li> <a [routerLink]="['/estadoterrorista']" [routerLinkActive]="['activado']">Estado Terrorista</a> </li>
-            <li> <a [routerLink]="['/historias']" [routerLinkActive]="['activado']">Historias de vida</a> </li>
-            <li> <a [routerLink]="['/impunidad']" [routerLinkActive]="['activado']">Contra la impunidad</a> </li>
+            <li> <a [routerLink]="['/historias']" [routerLinkActive]="['activado']">Nuestros Compañeros</a> </li>
+            <li> <a [routerLink]="['/impunidad']" [routerLinkActive]="['activado']">Todos Contra la impunidad</a> </li>
             <li id="juicios-drop" class ="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Juicios<span class="caret"></span></a>
                 <ul class="dropdown-menu" style="background-color: #20272a;">
@@ -19,7 +19,11 @@
         <a id="pull" (click)="desplegar()">Secciones<i class="fa fa-bars"></i></a>
     </nav>
 </div>
-
+<script type="text/javascript">
+    public desplegar(){
+        $('.classse').slideToggle();
+    }
+</script>
 <router-outlet></router-outlet>
 
 <footer  class="col-md-10 col-md-offset-1">
@@ -40,7 +44,7 @@
             <a href=""><img src="/assets/img/f5.png" alt="Logo Asociasion de reporteros graficos de nqn" class="img-responsive"></a>
         </li>
         <li>
-            <a href="http://www.apdh-argentina.org.ar/" target="_blank"><img src="/assets/img/f6.png" alt="Logo APDH" class="img-responsive"></a>
+            <a href="http://apdhneuquen.blogspot.com.ar/" target="_blank"><img src="/assets/img/f6.png" alt="Logo APDH" class="img-responsive"></a>
         </li>
     </ul>
 </footer>
