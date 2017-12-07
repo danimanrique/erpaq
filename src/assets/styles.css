@@ -438,3 +438,52 @@ body, html {
 .imagen-modal{
     width: 100%;
 }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+                            /*MUSIC*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Contenedor general contenido */
+.hiddencon {
+margin-top: 2.5%;
+padding: 0;
+width: 410px;
+z-index:99999;
+position: fixed;
+/* Desplazamiento para ocultar hacia la derecha
+todo el ancho del bloque menos el borde */
+right: -410px;
+top: 10px;
+}
+/* Contenido visible al hacer hover */
+.hiddencon:hover {
+right: 0;
+}
+/* Pestaña para desplegar */
+.hiddencon-label {
+margin-top: -21px;
+margin-left: -34px;
+padding: 10px;
+position: absolute;
+top: 50%;
+display: inline-block;
+color: white;
+background: rgba(190, 144, 27, 0.9);
+font-size: 18px;
+-moz-border-radius: 20px 0 0 20px;
+-webkit-border-radius: 20px 0 0 20px;
+border-radius: 20px 0 0 20px;
+}
+.hiddencon, .hiddencon-label {
+/* Desplegado suave con transiciones */
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.reproductor{
+    background: rgba(190, 144, 27, 0.9);
+    text-align: center;
+    padding: 10px;
+}
+#bp[disabled]{
+    cursor: not-allowed !important;
+}

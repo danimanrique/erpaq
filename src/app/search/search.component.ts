@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router'
-declare var jQuery: any;
-declare var $: any;
 
 @Component({
     selector: 'search',

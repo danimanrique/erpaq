@@ -1,0 +1,10 @@
+<div class="hiddencon">
+<div class="hiddencon-label"><span class="glyphicon glyphicon-music"></span></div>
+<div class="reproductor">
+    <p>{{indice+1}}) {{temas[indice].nombre}}</p>
+    <audio id="myAudio" controls autoplay (ended)="next()" src="{{temas[indice].cancion}}"></audio>
+    <br>
+    <button id="bp" (click)="prev()" [disabled]="indice == 0"><span class="glyphicon glyphicon-fast-backward"></span></button>
+    <button id="bn" (click)="next()"><span class="glyphicon glyphicon-fast-forward"></span></button>
+</div>
+</div>
