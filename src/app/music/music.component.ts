@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { EventManager } from '@angular/platform-browser';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import { Injectable } from '@angular/core';
@@ -17,7 +16,7 @@ export class MusicComponent{
     public indice: number;
     public rep;
 
-    constructor(private eventManager: EventManager){
+    constructor(){
         this.temas = [
             {
                 cancion:"../../assets/music/La Memoria.mp3",

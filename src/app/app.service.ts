@@ -14,7 +14,9 @@ export class AppService{
   ){
     this.url = GLOBAL.url;
   }
-
+  getHome(){
+    return this._http.get(this.url+"/home").map(res => res.json());
+  }
   /* Seccion 1 - Estado Terrorista */
   getEstado(){
     return this._http.get(this.url+"/estado").map(res => res.json());
