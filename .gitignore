@@ -47,3 +47,4 @@ src/**/*.js
 *.js.map
 src/assets/img
 src/assets/lib
+src/assets/music

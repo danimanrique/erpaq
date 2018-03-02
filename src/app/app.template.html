@@ -1,5 +1,5 @@
 
-<div id="div-nav" class="container-fluid">
+<div *ngIf="!error" id="div-nav" class="container-fluid">
     <nav>
         <ul class="col-md-10 col-md-offset-1 classse">
             <li> <a [routerLink]="['/home']" [routerLinkActive]="['activado']">Inicio</a> </li>
@@ -20,7 +20,7 @@
         <a id="pull" (click)="desplegar()">Secciones<i class="fa fa-bars"></i></a>
     </nav>
 </div>
-<music></music>
+<music *ngIf="!error"></music>
 <script type="text/javascript">
     public desplegar(){
         $('.classse').slideToggle();
@@ -28,7 +28,7 @@
 </script>
 <router-outlet></router-outlet>
 
-<footer  class="col-md-10 col-md-offset-1">
+<footer  *ngIf="!error" class="col-md-10 col-md-offset-1">
     <ul>
         <li>
             <a href="http://www.uncoma.edu.ar" target="_blank"><img src="/assets/img/f1.png" alt="Logo UNCo" class="img-responsive"></a>
@@ -37,13 +37,13 @@
             <a href="http://www.spnqn.com.ar" target="_blank"><img src="/assets/img/f2.png" alt="Logo SPNQN" class="img-responsive"></a>
         </li>
         <li>
-            <a href=""><img src="/assets/img/f3.png" alt="Logo Memoria Colectiva" class="img-responsive"></a>
+            <img src="/assets/img/f3.png" alt="Logo Memoria Colectiva" class="img-responsive">
         </li>
         <li>
             <a href="http://www.radiouncocalf.com.ar" target="_blank"><img src="/assets/img/f4.png" alt="Logo UNC CALF" class="img-responsive"></a>
         </li>
         <li>
-            <a href=""><img src="/assets/img/f5.png" alt="Logo Asociasion de reporteros graficos de nqn" class="img-responsive"></a>
+            <img src="/assets/img/f5.png" alt="Logo Asociasion de reporteros graficos de nqn" class="img-responsive">
         </li>
         <li>
             <a href="http://apdhneuquen.blogspot.com.ar/" target="_blank"><img src="/assets/img/f6.png" alt="Logo APDH" class="img-responsive"></a>

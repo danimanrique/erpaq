@@ -426,7 +426,7 @@ body, html {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-                            /*ESTILOS PARA ERROR*/
+                            /*ESTILOS PARA ERRORES*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #back-error{
     background-image: url("/assets/img/error/404.png");
@@ -434,9 +434,18 @@ body, html {
     background-repeat: no-repeat;
     align-content: center;
     height: 70%;
+    background-color: black;
 }
 .imagen-modal{
     width: 100%;
+}
+
+#server-error{
+    background-image: url("/assets/img/error/500.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    height: 100%;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

@@ -11,7 +11,7 @@ import { Seccion5Component } from './s5-Juicios_Nqn/s5.component';
 import { SearchComponent } from './search/search.component';
 import { ResultComponent } from './result/result.component';
 import { ErrorComponent } from './error/error.component';
-
+import { ErrorAPIComponent } from './errorAPI/errorAPI.component';
 //Definimos el arreglo qye relaciona el path con el componente que llama
 
 const appRoutes: Routes = [
@@ -24,6 +24,7 @@ const appRoutes: Routes = [
    {path: 'juicionqn',component: Seccion5Component},
    {path: 'search',component: SearchComponent},
    {path: 'result/:keyWords/:sections',component: ResultComponent},
+   {path: 'server-error', component: ErrorAPIComponent},
    {path: '**',component: ErrorComponent}
    //En realidad la ultima regla (defalut) deberia llamar a una pagina de error404
 ];

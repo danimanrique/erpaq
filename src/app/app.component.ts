@@ -12,16 +12,19 @@ declare var $:any;
 })
 
 export class AppComponent  {
+    public error = false;
 
     constructor(
         private _route: ActivatedRoute,
         private _router: Router,
         private _service: AppService
     ){
+        console.log("verifica conexion")
         this._service.getHome().subscribe(
           response => {},
           err => {
-            this._router.navigate(['/error'])           
+            this.error = true;
+            this._router.navigate(['/server-error'])
           }
         );
     }

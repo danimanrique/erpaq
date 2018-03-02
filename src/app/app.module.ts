@@ -16,6 +16,7 @@ import { SearchComponent } from './search/search.component';
 import { ResultComponent } from './result/result.component';
 import { MusicComponent } from './music/music.component';
 import { ErrorComponent } from './error/error.component';
+import { ErrorAPIComponent } from './errorAPI/errorAPI.component';
 
 //Componentes tercerizados
 import { NgxGalleryModule } from 'ngx-gallery';
@@ -32,7 +33,8 @@ import { NgxGalleryModule } from 'ngx-gallery';
       SearchComponent,
       ResultComponent,
       MusicComponent,
-      ErrorComponent
+      ErrorComponent,
+      ErrorAPIComponent
    ],
    imports: [
       FormsModule,
