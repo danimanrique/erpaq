@@ -2,12 +2,17 @@
     <h1 class='text-center'>Resultado de la Búsqueda</h1>
     <div id="palabras">
         <em>Palabras buscadas: </em> {{arreglo}}
+
     </div>
     <div *ngIf="!lista_resultado">
         Cargando resultados...
     </div>
     <div class="row center-xs">
-        <div id="fondo-busqueda" class="text-center" *ngIf="lista_resultado">
+        <div id="fondo-busqueda" class="text-center" *ngIf="lista_resultado.length == 0">
+          <i>No se encontraron resultados</i>
+          <br><br>
+        </div>
+        <div id="fondo-busqueda" class="text-center" *ngIf="lista_resultado.length != 0">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" *ngFor="let afiche of lista_resultado">
                 <div id="fondo-celda" class="thumbnail" data-toggle="modal" data-target="#myModal" (click)="abrir(afiche)">
                     <div>
@@ -33,6 +38,7 @@
             </div>
         </div>
     </div>
+    <br>
     <div>
         <button type="button" name="button" (click)="redirigir()" class="btn btn-primary btn-lg center-block">Volver a Búsqueda</button>
     </div>

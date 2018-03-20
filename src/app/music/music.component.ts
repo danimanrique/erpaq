@@ -23,16 +23,16 @@ export class MusicComponent{
                 nombre:"La Memoria - León Gieco"
             },
             {
+                cancion:"../../assets/music/Quien quiera oír que oiga.mp3",
+                nombre:"Quien quiera oír que oiga - Silvina Garre y Juan Carlos Baglietto"
+            },
+            {
                 cancion:"../../assets/music/Los Dinosaurios.mp3",
                 nombre:"Los Dinosarios - Charly García"
             },
             {
                 cancion:"../../assets/music/Marcha de la Bronca.mp3",
                 nombre:"Marcha de la Bronca - Varios Artistas"
-            },
-            {
-                cancion:"../../assets/music/30 Mil Luces.mp3",
-                nombre:"30.000 Luces - De la Gran Piñata"
             },
             {
                 cancion:"../../assets/music/Desapariciones.mp3",
@@ -45,10 +45,6 @@ export class MusicComponent{
             {
                 cancion:"../../assets/music/Cancion de Alicia en el Pais.mp3",
                 nombre:"Cancion de Alicia en el País - Seru Giran"
-            },
-            {
-                cancion:"../../assets/music/Canción inútil.mp3",
-                nombre:"Canción Inútil - Ataque 77"
             },
             {
                 cancion:"../../assets/music/Nunca Más.mp3",
