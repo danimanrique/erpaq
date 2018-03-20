@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize} from 'ngx-gallery';
 import { Afiche } from '../afiche';
+declare var $: any;
 import { AppService } from '../app.service';
 
 
@@ -12,56 +12,48 @@ import { AppService } from '../app.service';
 })
 
 export class Seccion4Component implements OnInit{
-    public galleryOptions: NgxGalleryOptions[];
-    public galleryImages: NgxGalleryImage[];
+  public heightVisor: number;
+  public alturaFlechas:number;
+  public srcImg: String;
+  public descripcion: String;
+  public arrImg: Array<Afiche>;
+  public i: number;
+  constructor(
+      private _appService:AppService,
+  ){}
 
-    constructor(
-        private _appService:AppService,
-    ){}
+  ngOnInit():void{
+    this.heightVisor = 640;
+    this.alturaFlechas = this.heightVisor/2;
+    $('.zoom-image').zoomImage({
+        touch: false
+    });
+    this._appService.getNeuquen().subscribe(
+      result =>{
+          this.arrImg = result.afiches;
+          this.i = 0;
+          this.srcImg = this.arrImg[this.i].big;
+          this.descripcion = this.arrImg[this.i].name;
+      },
+      error =>{
+        this.arrImg = [];
+        console.log(<any>error);
+      }
+    );
+  }
 
-    ngOnInit():void{
-        this.galleryOptions = [
-            {
-                width: '100%',
-                height: '800px',
-                imagePercent: 85,
-                imageSize: NgxGalleryImageSize.Contain,
-                thumbnailsColumns: 6,
-                imageAnimation: NgxGalleryAnimation.Slide,
-                thumbnailsPercent: 15,
-                previewDescription: true,
-                previewCloseOnClick: true,
-                previewKeyboardNavigation: true
-            },
-            // max-width 1366
-            {
-                breakpoint: 1366,
-                height: '600px',
-                imageSize: NgxGalleryImageSize.Contain,
-                thumbnailsColumns: 6,
-                imageAnimation: NgxGalleryAnimation.Slide,
-                thumbnailsPercent: 10,
-                previewDescription: true,
-                thumbnailsMargin:2
-            },
-            // max-width 600
-            {
-                breakpoint:600,
-                image: false,
-                height:'150px',
-                thumbnailsColumns: 4,
-                thumbnailsPercent: 20,
-                previewDescription: true,
-            }
-        ];
-        this._appService.getBahia().subscribe(
-            result =>{
-                this.galleryImages = result.afiches;
-            },
-            error =>{
-                this.galleryImages = [];
-                console.log(<any>error);
-            }
-        );
+  public backImg() {
+    if (this.i > 0) {
+      this.i--;
+      this.srcImg = this.arrImg[this.i].big;
+      this.descripcion = this.arrImg[this.i].name;
     }
+  }
+  public nextImg() {
+    if (this.i < this.arrImg.length - 1) {
+      this.i++;
+      this.srcImg = this.arrImg[this.i].big;
+      this.descripcion = this.arrImg[this.i].name;
+    }
+  }
 }
