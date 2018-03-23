@@ -237,7 +237,7 @@ body, html {
     float:right;
 }
 #pic{
-    background-color:lightblue;
+    background-color:#8d1927;
     padding:15px 20px;
     padding-bottom: 10px;
     border-radius: 5px;
@@ -280,6 +280,12 @@ body, html {
     font-size: 50px;
     font-family: 'PT Sans', sans-serif;
 }*/
+#pic1{
+  background-color: #ada8a4;
+  padding:15px 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
 #fondo4{
     background-color: #a9e375;
 }
