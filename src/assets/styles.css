@@ -375,10 +375,10 @@ body, html {
     height: 34px;
     padding: 0px 8px;
 }
-#add:disabled{
+/*#add:disabled{
     background-color: #577586;
     cursor: not-allowed;
-}
+}*/
 #boton_buscar:disabled{
     background-color: #577586;
     cursor: not-allowed;
