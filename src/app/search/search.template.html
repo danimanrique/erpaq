@@ -18,12 +18,10 @@
     <br>
     <div id="f2" class="center-block formdiv">
         <p>Palabras clave: </p>
-        <span class="text-justify">Ingrese una o mas palabras que caractericen el contenido a buscar.
-             En caso de que sean más de una palabra deben ser ingresadas de una
-             a la vez. <strong>No deben contener números ni tildes.</strong></span>
-        <div class="">
-            <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel"
-            pattern="[a-zA-Z]+">
+        <span class="text-justify">Ingrese una o mas palabras que caractericen el contenido a buscar. <strong>NO DEBEN CONTENER TILDES.</strong> <br>
+             En caso de ser siglas, <strong>no escribirlas con puntos</strong>, ej: "P.E.N" debe escribirse como "PEN". </span>
+        <div>
+            <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel" pattern="[a-zA-Z0-9\s]+">
             <button type="button" id="add" [disabled]="inputState.invalid" (click)="addKeyWord()">Agregar</button>
         </div>
         <ul>
