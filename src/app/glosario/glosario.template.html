@@ -1,0 +1,42 @@
+<div id="formulario-glo" class="col-md-12 tamaño">
+
+  <h1 class='text-center'>GLOSARIO</h1>
+
+  <div id="f1" class="center-block formdiv">
+    <div class="text-center abece">
+      <a *ngFor="let l of abc; let i = index">
+        <strong (click)="filtrar(i)">&nbsp;{{l}} </strong>
+      </a>
+    </div>
+    <div class="text-center">
+      <label class="buscar">Buscar por Palabra: </label>
+      <input type="busca" [(ngModel)]="busqueda">
+    </div>
+    <br>
+
+    <strong>{{seleccion}}</strong>
+
+    <div *ngIf="conceptos2.length == 0; else hay" class="text-center">
+      No hay conceptos con la letra seleccionada.
+    </div>
+    <ng-template #hay>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div *ngFor="let i = index; let c of conceptos2 | buscar: busqueda"  class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <a class="collapsed titulo" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{i+1}}" aria-expanded="false">
+              <h4 class="panel-title">{{c.titulo}}</h4>
+            </a>
+          </div>
+          <div id="{{i+1}}" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body text-justify" innerHTML={{c.significado}}>
+              <!-- {{c.significado}} -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
+
+  </div>
+
+</div>

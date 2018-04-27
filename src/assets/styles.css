@@ -303,13 +303,18 @@ body, html {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-                            /*ESTILOS PARA SEARCH*/
+                            /*ESTILOS PARA LUPA*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#menu-lupa{
+  background-color: #eee;
+}
 #formulario{
     padding: 15px;
     align-content: center;
-    background-color: #bddeda;
-
+    background-color: #73b3e9;
+}
+#formulario h1{
+    margin-bottom: 20px;
 }
 #f1 li{
     list-style: none;
@@ -395,7 +400,7 @@ body, html {
 #back-result{
     padding: 15px;
     align-content: center;
-    background-color: #bddeda;
+    background-color: #73b3e9;
     margin-bottom: 10px;
 }
 .afiche-mask{
@@ -427,10 +432,47 @@ body, html {
     padding-left: 10px;
     font-size: 18px;
 }
-#palabras em{
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+                            /*ESTILOS PARA GLOSARIO*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.buscar{
+  font-size: 18px;
+  margin: 6px 15px;
 }
-
+.busqueda{
+  font-size: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.panel-group {
+    margin-bottom: 0px;
+}
+.tamaño{
+  min-height: 365px;
+  height: 100%
+}
+.titulo{
+  text-decoration: none !important;
+  color: inherit;
+}
+.abece{
+  font-weight: bold;
+  font-size: 16px;
+  margin: -10px 0px 15px 0px;
+  background-color: #ccc;
+  padding: 8px;
+}
+.abece a:active{
+  color: white;
+  background-color: #20272a;
+  text-decoration: none !important;
+}
+#formulario-glo{
+    padding: 15px;
+    align-content: center;
+    background-color: #73b3e9;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
                             /*ESTILOS PARA ERRORES*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

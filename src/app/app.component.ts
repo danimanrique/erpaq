@@ -12,6 +12,7 @@ declare var $:any;
 })
 
 export class AppComponent  {
+    // indica si hubo o no conección con la api. en tal caso, no muestra nada, solo un error
     public error = false;
 
     constructor(
@@ -19,7 +20,6 @@ export class AppComponent  {
         private _router: Router,
         private _service: AppService
     ){
-        console.log("verifica conexion")
         this._service.getHome().subscribe(
           response => {},
           err => {

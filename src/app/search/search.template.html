@@ -1,8 +1,5 @@
-<div id="formulario" class="col-md-10 col-md-offset-1">
-  <div style="background-color: #eee; padding: 5px 0px 5px 0px; text-align: center">
-        SECCIÓN AÚN EN CONSTRUCCIÓN
-  </div>
-    <h1 class='text-center'>Búsqueda</h1>
+<div id="formulario" class="col-md-12">
+    <h1 class='text-center'>BÚSQUEDA</h1>
     <div id="f1" class="center-block formdiv">
         <p>Filtrar por seccion:</p>
         <span>Seleccione al menos una de las secciones para realizar la busqueda</span>
@@ -22,7 +19,7 @@
              En caso de ser siglas, <strong>no escribirlas con puntos</strong>, ej: "P.E.N" debe escribirse como "PEN". </span>
         <div>
             <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel" pattern="[a-zA-Z0-9\s]+">
-            <button type="button" id="add" [disabled]="inputState.invalid" (click)="addKeyWord()">Agregar</button>
+            <button type="button" id="add" [disabled]="inputState.invalid || verifica()" (click)="addKeyWord()">Agregar</button>
         </div>
         <ul>
             <li *ngFor="let key of keyWords; let i = index">

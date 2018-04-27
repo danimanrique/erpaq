@@ -8,7 +8,7 @@ import { Seccion2Component } from './s2-Nuestros_companieros/s2.component';
 import { Seccion3Component } from './s3-Todos_contra_la_impunidad/s3.component';
 import { Seccion4Component } from './s4-Juicios_Bahia/s4.component';
 import { Seccion5Component } from './s5-Juicios_Nqn/s5.component';
-import { SearchComponent } from './search/search.component';
+import { LupaComponent } from './lupa/lupa.component';
 import { ResultComponent } from './result/result.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorAPIComponent } from './errorAPI/errorAPI.component';
@@ -22,7 +22,7 @@ const appRoutes: Routes = [
    {path: 'impunidad',component: Seccion3Component},
    {path: 'juiciobahia',component: Seccion4Component},
    {path: 'juicionqn',component: Seccion5Component},
-   {path: 'search',component: SearchComponent},
+   {path: 'search',component: LupaComponent},
    {path: 'result/:keyWords/:sections',component: ResultComponent},
    {path: 'server-error', component: ErrorAPIComponent},
    {path: '**',component: ErrorComponent}

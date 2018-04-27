@@ -21,6 +21,7 @@ export class SearchComponent implements OnInit {
         this.all = false;
         this.keyWords = [];
         this.sections = [false,false,false,false,false];
+        this.claveAGuardar = "";
     }
 
     public activarBoton(valor:number): void {
@@ -67,7 +68,7 @@ export class SearchComponent implements OnInit {
 
     redirigir(){
         let keys = this.keyWords.toString();
-        let secciones = this.sections.toString(); 
+        let secciones = this.sections.toString();
         console.log("probando",keys,secciones);
         this._router.navigate(['/result', keys, secciones],{ skipLocationChange: true});
     }
@@ -80,5 +81,9 @@ export class SearchComponent implements OnInit {
             }
         }
         return re;
+    }
+
+    verifica(){
+      return this.claveAGuardar == ''
     }
 }

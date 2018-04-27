@@ -12,11 +12,14 @@ import { Seccion2Component } from './s2-Nuestros_companieros/s2.component';
 import { Seccion3Component } from './s3-Todos_contra_la_impunidad/s3.component';
 import { Seccion4Component } from './s4-Juicios_Bahia/s4.component';
 import { Seccion5Component } from './s5-Juicios_Nqn/s5.component';
+import { LupaComponent } from './lupa/lupa.component';
+import { GlosarioComponent } from './glosario/glosario.component';
 import { SearchComponent } from './search/search.component';
 import { ResultComponent } from './result/result.component';
 import { MusicComponent } from './music/music.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorAPIComponent } from './errorAPI/errorAPI.component';
+import { BuscarPipe } from './pipes/buscar.pipe'
 
 //Componentes tercerizados
 import { NgxGalleryModule } from 'ngx-gallery';
@@ -30,11 +33,14 @@ import { NgxGalleryModule } from 'ngx-gallery';
       Seccion3Component,
       Seccion4Component,
       Seccion5Component,
+      LupaComponent,
+      GlosarioComponent,
       SearchComponent,
       ResultComponent,
       MusicComponent,
       ErrorComponent,
-      ErrorAPIComponent
+      ErrorAPIComponent,
+      BuscarPipe
    ],
    imports: [
       FormsModule,
