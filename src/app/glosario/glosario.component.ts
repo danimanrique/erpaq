@@ -37,6 +37,10 @@ export class GlosarioComponent implements OnInit{
             significado: '<p>Sistema político-socio-económico caracterizado fundamentalmente por la propiedad privada y concentrada de los principales medios de producción y comunicación. Se les reconoce a los individuos libertad para realizar contratos que regulen sus propios intereses, sin importar sus efectos en el aumento de la pobreza y la exclusión social.</p><p>En la actualidad son los grupos financieros (especulación y Bolsa de Valores) los que dictan las “reglas del juego” en la sociedad capitalista.</p>'
           },
           {
+            titulo: 'Carapintadas',
+            significado: '<p>En abril de 1987 algunos oficiales del ejército fueron citados ante la Cámara Federal  de Córdoba, imputados por delitos perpetrados en el centro clandestino “La Perla”, entre ellos el torturador Ernesto  “Nabo “ Barreiro. Varias unidades del ejército se sublevaron y avanzaron en largas columnas motorizadas sobre la Capital Federal y capitales de provincia, exigiendo la clausura de los procesos judiciales, ante la pasividad de los mandos superiores. Iban de uniforme con pertrechos bélicos y las caras embetunadas. El pueblo, que resistía reuniéndose en plazas y locales públicos, los apodó Carapintadas.</p>'
+          },
+          {
             titulo: 'Centro Clandestino',
             significado: '<p>Diferentes lugares e instalaciones secretas fueron utilizadas por el terrorismo de estado para torturar, interrogar, violar, mantener detenidas ilegalmente y asesinar a militantes políticos, sociales y gremiales. Los “centros clandestinos de detención” (CCD) sirvieron para ejecutar el plan sistemático de desaparición de personas.</p>'
           },
@@ -51,6 +55,10 @@ export class GlosarioComponent implements OnInit{
           {
             titulo: 'Comunismo',
             significado: '<p>La palabra comunismo tiene una doble acepción:</p> <p>a) conjunto de teorías o doctrinas comunistas desarrolladas por Karl Marx y Federico Engels (siglo  XIX) y sus seguidores, hasta nuestros días. Se las llama también marxismo o socialismo científico. Propone abolir la propiedad privada, colectivizar los medios de producción y desembocar en una sociedad sin oprimidos ni opresores.</p><p>b) sistema político-económico-social organizado conforme a las teorías marxistas. Fuera de un tronco común de premisas y de metas, las expresiones del comunismo histórico difieren según la época y el país en que cada experiencia se desarrolló concretamente.</p>'
+          },
+          {
+            titulo: 'CONADEP',
+            significado: '<p>La Comisión por los desaparecidos fue creada por Raúl Alfonsín al asumir la presidencia de la nación el 10 de diciembre de 1983. Estaba integrada  por  personalidades que habían actuado en defensa de los DD. HH. de las víctimas durante la dictadura, y por representantes del Poder Legislativo. La presidió el escritor Ernesto Sábato y la integraron entre otros René Favaloro, Gregorio Klimovsky, el rabino Marshall Meyer, el obispo Jaime De Nevares. El Presidente le otorgó plenos poderes para recibir, investigar, y elevar a la justicia denuncias por desaparición forzada, ejecuciones clandestinas, detenciones sin causa ni proceso, tormentos, apropiación de niños nacidos en cautiverio, robo de bienes de las víctimas, etc. Algunos organismos de DD. HH. colaboraron intensamente con esta tarea. La CONADEP presento su informe final “NUNCA MAS” el  20 de setiembre de l984. </p>'
           },
           {
             titulo: 'Corriente de Militantes por lo DDHH',
@@ -101,6 +109,10 @@ export class GlosarioComponent implements OnInit{
             significado: '<p>Fue el sostén ideológico de las dictaduras militares en América Latina durante las décadas de 1960 y 1970. Los Estados Unidos temían que la influencia de la revolución cubana de 1959 significara una expansión del comunismo en América Latina y que el continente girara hacia la órbita soviética. Para evitarlo propició una contraofensiva política y militar. Esto se dio en el contexto de lo que se llamó “guerra fría”.</p><p>La Doctrina de Seguridad Nacional le otorgaba a las fuerzas armadas de los países latinoamericanos un rol principal en la lucha contra el comunismo y en el control de la sociedad. En los hechos, esto significó el apoyo de la Agencia Central de Inteligencia (CIA) de los Estados Unidos a las dictaduras militares que se expandieron por el continente durante esos años.</p>'
           },
           {
+            titulo: 'Dn. Jaime Francisco de Nevares',
+            significado: '<p>Jaime de Nevares fue nombrado obispo de Neuquén en 1961. Sacerdote y abogado “Dn. Jaime” como todos le llamaban, convirtió en acto cada una de sus convicciones en cuanto a la defensa de los pobres, de los pueblos originarios, de los trabajadores y en su firme oposición a las dictaduras cívico-militares. En 1971, De Nevares siguió la línea que había adoptado en El Chocón y renunció a dar la bendición en actos oficiales. Luego, en 1976, encabeza la creación de la primera delegación de la Asamblea Permanente por los Derechos Humanos del país en Neuquén. Don Jaime es el  faro  inspirador de la Defensa de los Derechos Humanos  en la región y el país. Falleció el 19 de Mayo de l995.</p>'
+          },
+          {
             titulo: 'Escuela de las Américas',
             significado: '<p>La Escuela de las Américas dirigida y financiada por EEUU, fue establecida en Panamá en 1946 y luego trasladada a una guarnición de Estados Unidos. Su misión era entrenar a militares y fuerzas de seguridad de los países latinoamericanos, en métodos capaces de extirpar  de la población toda idea o proyecto  opuesto a la doctrina de seguridad nacional. Sus cursos incluían operaciones de comando, guerra psicológica, técnicas de interrogatorio bajo tortura, etc.</p>'
           },
@@ -119,6 +131,10 @@ export class GlosarioComponent implements OnInit{
           {
             titulo: 'Genocidio',
             significado: '<p>Es un crimen de lesa humanidad definido como una negación del derecho de existencia a grupos humanos enteros, sean ellos nacionales, raciales, religiosos o políticos y que se traduce en la persecución, asesinato, exterminio, deportación masiva o esclavitud.</p>'
+          },
+          {
+            titulo: 'Genocidio Mapuche',
+            significado: '<p>Fue perpetrado a lo largo de segunda mitad del siglo XIX por el Estado Argentino, para adueñarse del territorio ocupado ancestralmente por los Pueblos Originarios de la Patagonia, desde antes de la Conquista española. Culmino con la llamada “Conquista del Desierto” (1876/1879) que doblego la últimas resistencias de las tribus Mapuche al precio de decenas de miles de muertos y de prisioneros, los que fueron reducidos a la esclavitud.</p>'
           },
           {
             titulo: 'Gobierno Cívico-Militar',
@@ -161,8 +177,20 @@ export class GlosarioComponent implements OnInit{
             significado: '<p>Se aplica a posiciones políticas progresistas y/o de raíz socialista o marxista.</p>'
           },
           {
+            titulo: 'Juicio a las Juntas',
+            significado: '<p>El 9 de diciembre de 1985 el presidente Alfonsín da orden que se abriera un juicio contra los integrantes de las tres Juntas que habían gobernado sucesivamente el país durante la dictadura cívico-militar. Se les imputó el haber ordenado la ejecución de un plan criminal para reprimir toda forma de oposición al modelo político, económico y cultural que el llamado “Proceso de Reorganización Nacional” pretendía imponer. Para fundamentar las imputaciones se seleccionaron  709 denuncias documentadas en el informe CONADEP. Fueron  condenados a reclusión perpetua Videla y Masera, Viola a diecisiete años y el brigadier Agosti a cuatro años  y seis meses  de prisión. Todos fueron despojados de su grado militar y enviados a cárcel común. Los integrantes de la 3ra. Junta resultaron absueltos.</p>'
+          },
+          {
             titulo: 'Junta Militar',
             significado: '<p>Es un gobierno en el cual las fuerzas armadas en conjunto, toman el poder por un golpe de estado. En 1976, en Argentina, la Junta Militar estuvo integrada por los máximos responsables de cada fuerza: Marina, Aviación y Ejercito, representados por el Almirante Emilio Massera, el Brigadier Orlando Agosti y el Teniente General Jorge Rafael Videla, respectivamente. Además, Videla ejerció la presidencia de facto de la Nación entre marzo de 1976 y el mismo mes de 1981. Sus sucesores fueron: los Tenientes Generales Roberto Viola, Fortunato Galtieri y Reynaldo Bignione hasta el 10 de Diciembre de 1983.</p>'
+          },
+          {
+            titulo: 'La Patagonia Rebelde',
+            significado: '<p>Título del libro del historiador Osvaldo Bayer que documenta la represión ilegal y los asesinatos de obreros rurales en la provincia de Santa Cruz, quienes habían protagonizado una huelga (1920/1921) por reclamos salariales y laborales. Actuaron fuerzas del ejército al mando del teniente coronel Héctor Varela. Hay una película sobre el mismo tema dirigida por Héctor Olivera en el año 1974.</p>'
+          },
+          {
+            titulo: 'Leyes y "Pseudo" Leyes',
+            significado: '<p>Las leyes son normas dictadas por el Congreso de la Nación o por las Legislaturas provinciales. La dictadura prohibió toda actividad del poder legislativo: diputados y senadores elegidos por el pueblo. En su lugar, otorgo a la C.A.I (Comisión de Asesoramiento Legislativo) la facultad de dictar ordenanzas que llamó “leyes” con la misma obligatoriedad que las leyes constitucionales, y que continuaban con la numeración de las votadas en democracia.</p>'
           },
           {
             titulo: 'Lucha Contrainsurgente',
@@ -185,8 +213,8 @@ export class GlosarioComponent implements OnInit{
             significado: '<p>Conjunto de normas establecidas por la Junta militar que gobernó el país desde 1976 a 1983 para la ejecución de la represión ilegal.</p>'
           },
           {
-            titulo: 'Presos P.E.N.',
-            significado: '<p>Presxs a disposición del poder ejecutivo nacional. Personas detenidas ilegalmente en los centros clandestinos pasaron a cárceles correspondientes a  las diferentes  Zonas y subzonas en que se había dividido el país durante el terrorismo de estado.</p>'
+            titulo: 'Presos P.E.N. (Presxs a disposición del poder ejecutivo nacional)',
+            significado: '<p>Personas detenidas ilegalmente en los centros clandestinos pasaron a cárceles correspondientes a  las diferentes  Zonas y subzonas en que se había dividido el país durante el terrorismo de estado.</p>'
           },
           {
             titulo: 'Picana',
@@ -198,7 +226,7 @@ export class GlosarioComponent implements OnInit{
           },
           {
             titulo: 'Subversivo',
-            significado: '<p>Su significado es persona que busca con sus acciones transformar, destruir, subvertir el orden social vigente. Fue utilizado por las dictaduras para señalar a todos sus opositores. Los grandes líderes que, en su tiempo, quisieron cambiar el estado de cosas que consideraban injustas (Gandhi, Luther King, etc.) y los revolucionarios latinoamericanos (San Martín, Bolívar, Artigas, etc.) fueron subversivos.</p>'
+            significado: '<p>Su significado es persona que busca con sus acciones transformar, destruir, subvertir el orden social vigente. Fue utilizado por las dictaduras para señalar a todos sus opositores.</p> <p>Los grandes líderes que, en su tiempo, quisieron cambiar el estado de cosas que consideraban injustas (Gandhi, Luther King, etc.) y los revolucionarios latinoamericanos (San Martín, Bolívar, Artigas, etc.) fueron subversivos.</p>'
           },
           {
             titulo: 'Teoría de los Dos Demonios',
