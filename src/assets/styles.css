@@ -370,13 +370,13 @@ body, html {
 }
 #f2 li{
     display: inherit;
+    font-size: 18px;
 }
 #f2 i{
-    font-size: 18px;
+    font-size: 20px;
     cursor: hand;
     cursor: pointer;
-    color: #BD3838;
-    background-color: #171717;
+    color: black;
     border-radius: 15px;
     padding: 2px 3px 2px 3px;
 }

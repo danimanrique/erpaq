@@ -10,7 +10,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 
 export class ResultComponent implements OnInit {
-    public lista_resultado: Array<Afiche>;
+    public lista_resultado: Array<Afiche>=[];
     public valor_big: String;
     public valor_name: String;
     public arreglo: Array<String>;
@@ -22,7 +22,8 @@ export class ResultComponent implements OnInit {
     ){}
 
     ngOnInit(): void{
-        this._route.params.subscribe(params => {
+        this._route.params.subscribe(
+          params => {
             if(params['arreglo']!="" && params['secciones']!=""){
                 this.arreglo = (params['keyWords']).split(',');
                 this.secciones = (params['sections']).split(',');
@@ -35,9 +36,14 @@ export class ResultComponent implements OnInit {
                 error =>{
                     this.lista_resultado = [];
                     console.log(<any>error);
+                    alert("Error al realizar la búsqueda. Por favor intenta nuevamente.")
                 }
             );
-         });
+         },
+         error=>{
+           alert("Error al realizar la búsqueda. Por favor intenta nuevamente.")
+         }
+       );
 
     }
 

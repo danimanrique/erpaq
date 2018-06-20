@@ -1,8 +1,26 @@
 <div id="formulario" class="col-md-12">
     <h1 class='text-center'>BÚSQUEDA</h1>
+    <div id="f2" class="center-block formdiv">
+        <p>1) Palabras clave: </p>
+        <span class="text-justify"><strong> . </strong>Ingresa aquellas palabras o frases que caractericen el contenido que deseas buscar.
+        <br><strong> . </strong>Por cada una de ellas clickea en "Agregar".
+        <br><strong> . </strong><strong>NO DEBEN CONTENER TILDES.
+        <br><strong> . </strong></strong>En caso de ser siglas, <strong>no escribirlas con puntos</strong>, ej: "P.E.N" debe escribirse como "PEN". </span>
+        <span *ngIf="keyWords.length != 0"><strong> . </strong>Toca el símbolo <b class="fa fa-trash"></b> si deseas descartar alguna de las palabras ingresadas.</span>
+        <div>
+            <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel" pattern="[a-zA-Z0-9\s]+">
+            <button type="button" id="add" [disabled]="inputState.invalid || verifica()" (click)="addKeyWord()">Agregar</button>
+        </div>
+        <ul class="columns">
+            <li *ngFor="let key of keyWords; let i = index">
+                {{key}} <i class="fa fa-trash" aria-hidden="true" (click)="removeKeyWord(i)"></i>
+            </li>
+        </ul>
+    </div>
+    <br>
     <div id="f1" class="center-block formdiv">
-        <p>Filtrar por seccion:</p>
-        <span>Seleccione al menos una de las secciones para realizar la busqueda</span>
+        <p>2) Filtrar por sección:</p>
+        <span>Elige una o más secciones donde realizar la búsqueda.</span>
         <ul>
             <li><button type="button" name="button" (click)="activarBoton(1)" [ngClass]="{presionado:sections[0]}">Estado Terrorista</button></li>
             <li><button type="button" name="button" (click)="activarBoton(2)" [ngClass]="{presionado:sections[1]}">Nuestros Compañeros</button></li>
@@ -10,21 +28,6 @@
             <li><button type="button" name="button" (click)="activarBoton(4)" [ngClass]="{presionado:sections[3]}">Juicios Bahía</button></li>
             <li><button type="button" name="button" (click)="activarBoton(5)" [ngClass]="{presionado:sections[4]}">Juicios Neuquén</button></li>
             <li><button type="button" name="button" (click)="activarBoton(0)">Seleccionar Todas</button></li>
-        </ul>
-    </div>
-    <br>
-    <div id="f2" class="center-block formdiv">
-        <p>Palabras clave: </p>
-        <span class="text-justify">Ingrese una o mas palabras que caractericen el contenido a buscar. <strong>NO DEBEN CONTENER TILDES.</strong> <br>
-             En caso de ser siglas, <strong>no escribirlas con puntos</strong>, ej: "P.E.N" debe escribirse como "PEN". </span>
-        <div>
-            <input type="text" [(ngModel)]="claveAGuardar" #inputState="ngModel" pattern="[a-zA-Z0-9\s]+">
-            <button type="button" id="add" [disabled]="inputState.invalid || verifica()" (click)="addKeyWord()">Agregar</button>
-        </div>
-        <ul>
-            <li *ngFor="let key of keyWords; let i = index">
-                {{key}} <i class="fa fa-times" aria-hidden="true" (click)="removeKeyWord(i)"></i>
-            </li>
         </ul>
     </div>
     <br>
